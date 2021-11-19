@@ -1,0 +1,24 @@
+/* 커서 css */
+.cursor-round{
+	width: 70px;height: 70px;
+	background: rgb(255, 255, 255);mix-blend-mode: difference;
+	position: fixed;top: 50%;left: 50%;border-radius: 50%;
+	transform: translate(-50%,-50%) translateZ(0);
+	pointer-events: none;z-index: 99999999;cursor: pointer;
+	animation: scale1 2s infinite linear;
+}
+@keyframes scale1 {
+    0% {
+        width: 60px;
+        height: 60px;
+    }
+    50% {
+        width: 70px;
+        height: 70px;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+}
+
