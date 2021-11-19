@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{font-size: 16px;margin: 0; padding: 0;
+}
+/* 메뉴를 누르면 이동하게 되는 섹션. 페이지라고 볼 수 있다. */
+.day6-area{display: flex;position: relative; width: 100vw; height: 100vh; visibility: hidden; z-index: 100;}
+.day6-area .member-wrap{width: 20vw; height: 50vh; top:20%; left: 10%;position: fixed; z-index: 500;}
+.day6-area .member-wrap h2{font-family: 'Red Hat Display', sans-serif;font-size: 2em;font-weight: 800;color: #1673ff;}
+.day6-area .member-wrap .member-list{margin-top:5%; font-family: 'Red Hat Display', sans-serif;font-size: 1.063em;font-weight: 100;color:#FF971E; line-height: 2em;}
+.day6-area .member-wrap .member-list li{ width: 100px; cursor: pointer; color:#FF971E; text-decoration: none;font-weight: 100;}
+.day6-area .member-wrap .member-list li:hover{letter-spacing: 1px; transition: 0.5s ease-in-out; font-weight: 800;}
+/* 뒤에 떠도는 도형 등 */
+.day6-area .shape{width: 100%; height: 100%; position: absolute}
+.day6-area .shape .circle1{
+    border:3px solid #FF971E; width: 50px; height: 50px; 
+    position: absolute; top:30%; left: 25%; border-radius: 50%;
+    animation: scale1 2s infinite linear; transform: translate(-50%, -50%);
+}
+@keyframes scale1 {
+    0% {
+        width: 50px;
+        height: 50px;
+    }
+    50% {
+        width: 60px;
+        height: 60px;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+    }
+}
+.day6-area .shape .circle2{
+    background-color: #EB2814;
+    width: 20px; height: 20px; position: absolute;z-index: 300; 
+    top:10%; left: 30%; border-radius: 50%; animation: scale2 1.7s infinite linear; transform: translate(-50%, -50%);
+}
+@keyframes scale2 {
+    0% {
+        width: 20px;
+        height: 20px;
+    }
+    50% {
+        width: 30px;
+        height: 30px;
+    }
+    100% {
+        width: 20px;
+        height: 20px;
+    }
+}
+@keyframes scale3 {
+0% {
+    width: 30px;
+    height: 30px;
+    }
+50% {
+    width: 50px;
+    height: 50px;
+    }
+100% {
+    width: 30px;
+    height: 30px;
+    }
+}
+@keyframes scale4 {
+0% {
+    width: 60px;
+    height: 60px;
+    }
+50% {
+    width: 30px;
+    height: 30px;
+    }
+100% {
+    width: 60px;
+    height: 60px;
+    }
+}
+.day6-area .shape .circle3{
+    border:5px solid #EB2814;position: absolute;z-index: 300;top:50%; left: 80%; 
+    border-radius: 50%; animation: scale3 1.7s infinite linear; transform: translate(-50%, -50%);
+}
+.day6-area .shape .circle4{
+    background-color: #FF971E;width: 20px; height: 20px; position: absolute;z-index: 300; 
+    top:81.5%; left: 56%; border-radius: 50%; animation: scale4 1.7s infinite linear; transform: translate(-50%, -50%);
+}
+.day6-area .shape .box{border:2px solid #EB2814; width: 350px; height: 500px; position: absolute; top:30%; left: 35%;}
+
+
+/* 멤버 이미지와 텍스트 */
+.day6-area .member-intro{width: 100vw; height: 100vh;display: flex; position: fixed; margin-top:12%; margin-left: 30%; visibility: hidden;}
+.day6-area .member-intro .member-img {position: absolute; z-index: 200; left: -2%;}
+.day6-area .member-intro .member-img >img{transition: 0.3s ease-in-out; cursor: pointer;}
+.day6-area .member-intro .member-img >img:hover{ transform: rotate(-10deg); transition: 0.3s ease-in-out}
+
+/* 이미지 호버를 유도하는 css */
+.day6-area .member-intro .member-img .hoverfollow {
+    position:absolute; top:-5%; left: -5%; z-index: 300;
+    width: 80px; height: 80px; border-radius: 50%; background: white; 
+    display: flex; justify-content: center; align-items: center; pointer-events: none;
+    transition: 0.4s;
+}
+.day6-area .member-intro .member-img .hoverfollow.active {
+    position:absolute; top:0%; left: -20%; z-index: 300;
+    transition: 0.4s; transform: rotate(-20deg);
+}
+.day6-area .member-intro .member-img .hoverfollow >p{
+    font-family: 'Red Hat Display', sans-serif; letter-spacing: 1px;
+    font-size: 0.8em; font-weight: 800; line-height: 1.2em; text-align: center; 
+}
+
+/* 멤버를 호버 했을 때...css */
+.day6-area .member-intro .member-hover{position: absolute; top:0; left: 0%;transition: 0.7s; transform: rotate(0deg)}
+.day6-area .member-intro .member-hover.active{position: absolute;top:0; left: 21%; transform: rotate(20deg);transition: 1s;z-index: 100;}
+.day6-area .member-intro .member-instrument{position: absolute;top:0; left: 20%;transition: 0.7s;display: flex; align-items: center; opacity: 0.5;}
+.day6-area .member-intro #jae {transform: rotate(30deg); width: 100%; position: absolute; top: 23%;}
+.day6-area .member-intro #sungjin {transform: rotate(30deg); width: 90%; position: absolute; top: 17%;}
+.day6-area .member-intro #youngk {transform: rotate(30deg); width: 90%; position: absolute; top: 17%;}
+.day6-area .member-intro #wonpil {transform: rotate(30deg); width: 90%; position: absolute; top: 17%;}
+.day6-area .member-intro #dowoon {transform: rotate(10deg); position: absolute; top: 0%; left:17%;}
+.day6-area .member-intro #dowoon >img{width: 80%;}
+
+/* 멤버 정보 텍스트 */
+.day6-area .member-intro .member-txt {position: absolute;margin-left: 35%; margin-top:20%; z-index: 200;font-family: 'Red Hat Display', sans-serif;text-transform:uppercase;}
+.day6-area .member-intro .member-txt > dl{letter-spacing: 2px; }
+.day6-area .member-intro .member-txt > dl > dt{font-size: 2.188em; font-weight: 800; color:#EB2814; margin-bottom:5%;}
+.day6-area .member-intro .member-txt > dl > dd{font-size: 1.063em; font-weight: 100; color:#FF971E; margin-bottom:5%;}
+.day6-area .member-intro .member-txt > dl > #memtmi1{font-size: 1.250em; font-weight: 400; color:#FF971E;}
+.day6-area .member-intro .member-txt > dl > #memtmi2{font-size: 2.188em; font-weight: 800; color:transparent; -webkit-text-stroke: 1px #FF971E;}
+.day6-area .member-intro .member-txt > dl > #memline{width: 240px; height: 2px; background-color: #FF971E; margin-top:5%;margin-bottom:5%;}
+
+
+
+
+  
