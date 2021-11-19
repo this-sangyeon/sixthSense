@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* album */
+.day6-area .album-wrap{width: 30vw; height: 100vh; top:20%; left: 10%; position: fixed;}
+.day6-area .album-wrap > .album-list > ul{
+    font-family: 'Red Hat Display', sans-serif; cursor: pointer;text-transform:uppercase;
+}
+/* 앨범 메뉴 - 첫번째 버튼에 해당되는 css */
+.day6-area .album-wrap > .album-list > ul > li{color:#FF971E; font-weight: 800; text-decoration: none;font-size: 2em;}
+.day6-area .album-wrap > .album-list > ul > li:first-child{margin-bottom:10px;color:#FF971E; font-weight: 800; text-decoration: none; font-size: 2em; height: 45px;}
+.day6-area .album-wrap > .album-list > ul > li:last-child{color:#FF971E; font-weight: 800; text-decoration: none; font-size: 1.5em;}
+.day6-area .album-wrap > .album-list > ul > li > .track-list{font-weight: 400; line-height: 4em; font-size: 0.7em; display:flex; flex-direction: column;justify-content: space-between;  height: 0;  opacity:0; transition: 0.3s;}
+.day6-area .album-wrap > .album-list > ul > li > .track-list.active {height: 200px;  opacity:1;}
+.day6-area .album-wrap > .album-list > ul > li > .track-list > .track-music{list-style: none;cursor: pointer;color: #FF961E; text-decoration: none;  height: 0; transition: 0.3s;}
+.day6-area .album-wrap > .album-list > ul > li > .track-list.active > .track-music{height: 28px;}
+.day6-area .album-wrap > .album-list > ul > li > .track-list > .track-music:hover{letter-spacing: 2px; transition: 0.3s ease-in-out; display: inline-block;}
+.day6-area .album-wrap .album-intro {width: 70%; top:35%; left:30%;transform: translateY(-50px);display: flex; position: fixed; justify-content: center; }
+.day6-area .album-wrap .album-intro > .album-img {width:100%;position: relative; cursor: pointer;} 
+.day6-area .album-wrap .album-intro > .album-img > img{box-shadow: 1px 10px 20px rgb(0, 0, 0);position: relative; z-index: 200;}
+.day6-area .album-wrap .album-intro > .album-img > .another-img{position: absolute; width: 100%; top:0; }
+.day6-area .album-wrap .album-intro > .album-img > .another-img > img:first-child{position: absolute; width:100px; margin-top:60%;transform: rotate(0deg);left: 30%;}
+.day6-area .album-wrap .album-intro > .album-img > .another-img > img:first-child.active{position: absolute;margin-top:-60%; width:400px;left: -30%; transform: rotate(-30deg)}
+.day6-area .album-wrap .album-intro > .album-img > .another-img > img:last-child{position: absolute; width:100px; margin-top:0%; transform: rotate(0deg);left: 0%;}
+.day6-area .album-wrap .album-intro > .album-img > .another-img > img:last-child.active{position: absolute; width:500px; margin-top:100%; transform: rotate(20deg);left: 60%;}
+.day6-area .album-wrap .album-intro > .album-txt{font-family: 'Red Hat Display', sans-serif;margin-left: 5%; position: relative; z-index: 100;}
+.day6-area .album-wrap .album-intro > .album-txt > dl{font-family: 'Red Hat Display', sans-serif;}
+.day6-area .album-wrap .album-intro > .album-txt > dl > dt{font-size: 2.188em; font-weight: 800; color:white; margin-bottom: 2%; letter-spacing: 1px;}
+.day6-area .album-wrap .album-intro > .album-txt > dl > dd {font-size:1.250em; font-weight: 400; color:white;margin-bottom: 4%;letter-spacing: 1px;}
+.day6-area .album-wrap .album-intro > .album-txt > dl > p {
+    font-family: 'Noto Sans KR', sans-serif; width: 70%; height: 300px; overflow-y: scroll; 
+    font-size:14px; font-weight: 400; color:white; line-height: 25px; text-align: justify; padding-right:20px;
+}
+.day6-area .album-wrap .album-intro > .album-txt > dl > p::-webkit-scrollbar {width: 5px;background-color:#fff5e92f;  border-radius: 1px;}
+.day6-area .album-wrap .album-intro > .album-txt > dl > p::-webkit-scrollbar-thumb {background-color: #ffffff; border-radius: 10px;}
+
+/* 앨범 메뉴 - 두번째 버튼에 해당되는 css */
+/* track list area */
+.day6-area .album-wrap .album-intro > .track-slide { 
+    display: flex; position: fixed; justify-content: center; 
+}
+div.track-slide {visibility: hidden; opacity: 0;}
+div.track-slide:first-child{visibility: visible; opacity: 1;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-img{}
+.day6-area .album-wrap .album-intro > .track-slide > .track-img > img{box-shadow: 1px 10px 20px rgb(0, 0, 0); }
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt{font-family: 'Red Hat Display', sans-serif;margin-left: 5%; margin-top:3%;}
+.day6-area .album-wrap .album-intro > .track-slide > p{font-size: 10em; font-weight: 800; position: absolute; top:-15%; left: 30%; color:#EB2814;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl{font-family: 'Red Hat Display', sans-serif; width: 70%;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl > dt{
+    font-size: 2em; font-weight: 800; color: white; margin-top: 5%;margin-bottom: 5%; letter-spacing: 1px; text-transform: uppercase;
+}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > p{ margin-top: 3%;font-size:1em; font-weight: 400; color: white; letter-spacing: 1px; text-transform: uppercase;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > p > strong{font-weight: 800;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl > dd {font-size:1em; font-weight: 400; color: white;line-height:1.5em; letter-spacing: 1px;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl > .track-line {width: 100%;height: 2px; background-color: white;margin-top: 5%;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl > p {
+    font-family: 'Noto Sans KR', sans-serif; width: 100%; height: 300px; margin-top: 5%;
+    font-size:14px; font-weight: 400; color:white; line-height: 25px; text-align: justify; padding-right:20px;
+}
+/* 노래 플레이 버튼 */
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl >.button-area > .play-btn { 
+    font-family: 'Noto Sans KR', sans-serif; display: flex;  border: none;  font-size:14px;
+    color: white;cursor: pointer; text-transform: uppercase;border:2px solid white; background: none;  border-radius: 10px; line-height: 15px;
+    width:80px;height:30px; font-weight:800; margin-right:10px; outline:none;margin-bottom:2%;
+    display:flex;justify-content:center;align-items:center;cursor:pointer;
+}
+
+/* 노래 플레이 시 이퀄라이저 애니메이션 */
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl >.button-area >.equalizer {
+    position: absolute;height: 100px;width: 50px;  
+    top:-90%;right:207%;transform: translate(-50%, -50%) scale(0.25);  
+}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl >.button-area > .equalizer >.bar {
+    width: 100%;height: 0;position: absolute;bottom: 0;left: 0;
+    background:  white;transition: height 0.4s ease;
+    animation: bar 0.4s 0s both alternate ease infinite;
+    display: flex;margin-left:5px;
+}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl >.button-area > .equalizer > .bar-1 {animation-delay: 0.2s;margin-left:5px;width: 20%;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl >.button-area >.equalizer >.bar-2 {margin-left:30px;width: 20%;animation-delay: 0.4s;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt  > dl >.button-area >.equalizer >.bar-3 {margin-left:60px;width: 20%;animation-delay: 0.6s;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt  > dl >.button-area >.equalizer >.bar-4 {margin-left:90px;width: 20%;animation-delay: 0.8s;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt  > dl >.button-area >.equalizer >.bar-5 {margin-left:120px;width: 20%;animation-delay: 1s;}
+@keyframes bar {
+    0% {
+    height: 0;
+    }
+    100% {
+    height: 100%;
+    }
+}
+
+/* 가사페이지css */
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page >.lyrics-area{
+    position: absolute; 
+    /* margin-left:15%;  */
+    background-color:none;overflow-y: scroll; 
+    width: 500px; height: 500px;
+}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page >.lyrics-area > p {font-family: 'Noto Sans KR', sans-serif; line-height: 30px; text-align: center; color:rgb(0, 0, 0); font-weight: 400; padding-bottom:20px;padding-top:20px;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page >.lyrics-area::-webkit-scrollbar {width: 5px;background-color:#ff8c0062;  border-radius: 1px; padding-left:40px;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page >.lyrics-area::-webkit-scrollbar-thumb {background-color: #ff5e00; border-radius: 10px;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt >  dl >.button-area {display:flex; flex-direction: column; width: 30%; justify-content: flex-end; position: absolute; top:17%;right:-5%; }
+
+/* 가사페이지 버튼 */
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > dl >.button-area >.lyrics-btn{
+    font-family: 'Noto Sans KR', sans-serif;  display: flex;  border: none;  font-size:14px;outline:none;margin-bottom:2%;
+    color: white;cursor: pointer; text-transform: uppercase;border:2px solid white; background: none;  border-radius: 10px; line-height: 15px;
+    width:80px;height:30px; font-weight:800;display:flex;justify-content:center;align-items:center;cursor:pointer;text-align: center;
+}
+/* 가사페이지가 나왔을 때 클로즈 버튼 */
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page > .lyrics-close{
+    width: 40px; height: 40px; border-radius: 50%; background:#FF971E; position: absolute; top:45%; left:3%;margin-left:5%;cursor: pointer;
+    display: flex; justify-content: center; align-items: center; z-index:500;
+}
+ .day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page > .lyrics-close >.line{width: 20px;height: 2px;position: absolute;background-color: black;}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt >  .lyrics-page > .lyrics-close >.line.line-1{transform:rotate(-45deg);}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt >  .lyrics-page > .lyrics-close >.line.line-2{transform:rotate(45deg);}
+.day6-area .album-wrap .album-intro > .track-slide > .track-txt > .lyrics-page {
+    width: 0vw; height: 80vh; background:#ffffff; position: absolute; top:-35%; right:5%;
+    display: flex; flex-direction: column; justify-content: center; transition: 0.5s ease-in-out;
+    z-index:500;border-radius: 5%; align-items: center; overflow: hidden;
+}
+
