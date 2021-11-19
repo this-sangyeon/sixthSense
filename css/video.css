@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+ 
+ /* video-area */
+.day6-area .video-area{width: 100vw; height: 100%;  position: fixed; display: flex;align-items: center;}
+.day6-area .video-area > .video-circle{
+    width: 550px; height: 550px;  position: fixed; border-radius: 50%; transform: scale(1.2);
+    position: absolute; background: url("../img/grad/grad4.gif"); right:0%; background-repeat: no-repeat;
+}
+.day6-area .video-wrap{width: 20vw; height: 10vh; top:20%; left: 10%;position: fixed; z-index: 500;}
+.day6-area .video-wrap h2{font-family: 'Red Hat Display', sans-serif;font-size: 2em;font-weight: 800;color: #FF961E;}
+
+/* 비디오 리스트 */
+.day6-area .video-area .video-list > ul{
+    position: absolute;top:50%; right:-5%;transform:translateY(-50%);
+}
+.day6-area .video-area .video-list > ul > li{
+    transform-origin: 150% 50%;
+    top: 50%;right:50%;position: absolute; transition: 1s ease-in-out;
+}
+.day6-area .video-area .video-list > ul > li:first-child{transform: translate(-50%, -50%) rotate(0deg);}
+.day6-area .video-area .video-list > ul > li:nth-child(2){transform: translate(-50%, -50%) rotate(72deg);}
+.day6-area .video-area .video-list > ul > li:nth-child(3){transform: translate(-50%, -50%) rotate(144deg);}
+.day6-area .video-area .video-list > ul > li:nth-child(4){transform: translate(-50%, -50%) rotate(216deg);}
+.day6-area .video-area .video-list > ul > li:nth-child(5){transform: translate(-50%, -50%) rotate(288deg);}
+.day6-area .video-area .video-list > ul > li> video{outline: none; border-radius: 20px;}
+.day6-area .video-area .video-list > ul > li > .video-text{ 
+    position: absolute; margin-top:10px; font-family: 'Red Hat Display', sans-serif; 
+    font-size: 2em;font-weight: 800;color: #ffffff;
+}
+/* 비디오 버튼 */
+.day6-area .video-area .video-button{display: flex; flex-direction: column;}
+.day6-area .video-area .video-button >.button-area {position: absolute; top:70%; left: 12%; z-index: 500; cursor: pointer;} 
+.day6-area .video-area .video-button >.button-area > button{
+    width:150px; height: 50px; margin-left: 5px; margin-right:5px;
+    background-color: #FF961E; border-radius: 20px;transition: 0.5s; 
+    color: #1673ff; outline: none; cursor: pointer; border:none;
+    text-transform: uppercase;font-family: 'Red Hat Display', sans-serif;font-weight: 800;
+}
+.day6-area .video-area .video-button >.button-area > button:hover{background-color: white; transition: 0.5s;}
+
+.day6-area .video-area > .video-button > #root{width: 100%;pointer-events: none;position: relative;  left:50%; margin-bottom: 15%;}
+.day6-area .video-area > .video-button >#root .headline{
+    font-family: 'Red Hat Display', sans-serif;font-weight: 800;font-size: 5em;
+    letter-spacing: 5px;text-align: left;
+    background: url("../img/grad/grad2.gif");background-size: cover;
+    -webkit-text-fill-color: transparent;-webkit-background-clip:text;pointer-events: none;
+}
