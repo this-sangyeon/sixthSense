@@ -122,13 +122,15 @@
 .day6-area .member-intro #dowoon >img{width: 80%;}
 
 /* 멤버 정보 텍스트 */
-.day6-area .member-intro .member-txt {position: absolute;margin-left: 35%; margin-top:20%; z-index: 200;font-family: 'Red Hat Display', sans-serif;text-transform:uppercase;}
-.day6-area .member-intro .member-txt > dl{letter-spacing: 2px; }
-.day6-area .member-intro .member-txt > dl > dt{font-size: 2.188em; font-weight: 800; color:#EB2814; margin-bottom:5%;}
-.day6-area .member-intro .member-txt > dl > dd{font-size: 1.063em; font-weight: 100; color:#FF971E; margin-bottom:5%;}
-.day6-area .member-intro .member-txt > dl > #memtmi1{font-size: 1.250em; font-weight: 400; color:#FF971E;}
-.day6-area .member-intro .member-txt > dl > #memtmi2{font-size: 2.188em; font-weight: 800; color:transparent; -webkit-text-stroke: 1px #FF971E;}
-.day6-area .member-intro .member-txt > dl > #memline{width: 240px; height: 2px; background-color: #FF971E; margin-top:5%;margin-bottom:5%;}
+.day6-area .member-intro .member-txt {position: relative; width: 20%; height: 25%; background: #ffffff;
+left: 30%; top:30%; z-index: 200;font-family: 'Red Hat Display', sans-serif;text-transform:uppercase;
+display: flex; flex-direction: column; padding: 1%;
+}
+.day6-area .member-intro .member-txt > h2 { font-size: 3rem; letter-spacing: 2px; font-weight: 800; margin-bottom:5%; color:red}
+.day6-area .member-intro .member-txt > p{font-size: 1rem; font-weight: 100; color:black; margin-bottom:5%;}
+.day6-area .member-intro .member-txt > p:first-of-type{font-size: 1.5rem; font-weight: 500; color:#FF971E; margin-bottom:5%;}
+.day6-area .member-intro .member-txt > p:nth-of-type(2){font-size: 1.2rem; font-weight: 300; color:#FF971E;}
+.day6-area .member-intro .member-txt > p:last-of-type{width:50%;font-size: 3rem; font-weight: 800; color:transparent; -webkit-text-stroke: 1px #FF971E;}
 
 
 

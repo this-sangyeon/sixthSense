@@ -149,10 +149,10 @@ senseListEls[0].addEventListener('click', function(){
     transitionBox.classList.remove('active1');
     transitionBox.classList.remove('active2');
     transitionBox.classList.remove('active3');
-    transitionBox.style.width = '16.5vw';
-    transitionBox.style.height = '22vh';
-    transitionBox.style.bottom = '24%';
-    transitionBox.style.right = '20%';
+    transitionBox.style.width = '0vw';
+    transitionBox.style.height = '0vh';
+    transitionBox.style.bottom = '35%';
+    transitionBox.style.right = '30%';
 
     // 멤버 버튼을 클릭하면 li의 컬러가 변경
         for(let i = 0; i <senseListEls.length; i++){
