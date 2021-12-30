@@ -1,0 +1,24 @@
+html,
+body{
+    width: 100%; height: 100%;
+    margin:0; padding:0;
+    background: rgb(140, 13, 13); 
+    color:white; overflow: hidden; 
+    
+}
+.wrap{
+    width: 100%; height: 100%;position: relative;background:#1E290C;overflow: hidden; 
+}
+section{
+    width: 100%; height: 100%; position: absolute;
+    background-color: #1E290C; z-index: 1500;
+}
+section:first-of-type{
+    width: 100%; height: 100%; position: absolute;
+    background-color: #1E290C; z-index: 1900;
+}
+/* section.active {
+    width: 100%; height: 100%; position: absolute;
+    background-color: black; z-index: 400;
+     display:block; opacity: 1; 
+} */
