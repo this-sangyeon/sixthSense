@@ -8,7 +8,7 @@ header{
     align-items: center;  justify-content: space-between;
 }
 header .logo{
-    height: 100%; margin-left:2%;
+    height: 100%; margin-left:2%;margin-top:3%;
 }
 header .logo > a {height: 100%; display:flex; align-items: center;  justify-content:center;}
 header .logo > a > img {width: 70px;}
@@ -16,4 +16,4 @@ header .logo > a > img {width: 70px;}
 .sense-nav {height: 100%; margin-right: 2%; text-align: right; position: relative;}
 .sense-nav ul{display: flex; flex-direction: column; justify-content: center;}
 .sense-nav ul li { list-style: none;  margin-bottom:7%;  cursor: pointer;}
-.sense-nav ul li a{font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 700;font-size: 1rem; color:#FF5D2C;text-decoration: none;}
+.sense-nav ul li a{font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 700;font-size: 1.5rem; color:#FF5D2C;text-decoration: none;}
