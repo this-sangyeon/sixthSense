@@ -1,0 +1,101 @@
+.member-container{
+    width: 100%; height: 100%; position: relative;
+}
+.member-area{
+    width: 100%; height: 100%; display: flex;
+}
+.member-list {
+    width: 20%; height: 100%;
+     display: flex; flex-direction: column;
+}
+.member-list .member-title{
+width: 100%;height: 20%; position: relative ;  top:0
+}
+.member-list .member-title p{
+ position: absolute;font-family: 'Red Hat Display', sans-serif;font-size: 2rem;font-weight: 800;text-transform: uppercase; bottom:0%; margin: 0;left: 50%;
+}
+.member-list .list{
+    width: 100%;height: 50%; position: relative ; margin-top: 5%;
+}
+.member-list ul {
+     position: absolute;left: 50%; margin: 0; padding:0;
+}
+.member-list ul li {
+    list-style: none; margin-top: 5%;
+    font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;text-transform: uppercase; color:#fff; 
+}
+.members-content{
+    width: 80%; height: 100%; position: relative; display: flex; 
+}
+.members-images{
+    width: 50%; height: 100%; position: relative;
+}
+.members-images .members-hover{
+    width: 100%; height: 100%; position: absolute;
+}
+
+.members-images .members-hover .members-imgs{
+     position: relative; width: 100%; height: 100%;   display: flex; justify-content: center; align-items: center;
+}
+.members-images .members-hover .members-imgs img{
+   top:50%; left:50%; transform: translate(-50%, -50%); position: absolute; width: 65%;
+}
+.members-images .members-hover .members-imgs img:first-of-type{
+    z-index: 1000;
+ }
+ .members-images .members-hover .members-imgs img:last-of-type{
+    z-index: 1001; width: 40%;
+ }
+ .members-images .members-hover .hoverfollow{
+    position: absolute; top:18%; left:20%; transform: translate(-50%, -50%); position: absolute; z-index: 1002;
+    width: 80px; height: 80px; border-radius: 50%; background: white; 
+    display: flex; justify-content: center; align-items: center; pointer-events: none;
+}
+.members-images .members-hover .hoverfollow p{
+    font-family: 'Red Hat Display', sans-serif; letter-spacing: 1px;
+    font-size: 0.8em; font-weight: 800; line-height: 1.2em; text-align: center; color:black;
+}
+.members-text{
+    width: 50%; height: 100%;  position: relative;
+}
+.members-text .text-area{
+    width: 50%; height: 20%; background-color: rgb(255, 255, 255); position: absolute; 
+    bottom:5%; left:5%; transform: translateY(-50%); padding: 2%; display: flex; flex-direction: column;
+}
+.members-text .text-area h1{
+    font-size: 3rem; letter-spacing: 2px; font-weight: 800;  color:red; margin: 0;font-family: 'Red Hat Display', sans-serif;
+}
+.members-text .text-area p {
+    display: inline;
+}
+.members-text .text-area p:first-of-type{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem; font-weight: 500; color:#FF971E;margin-bottom: 0%;margin-top: 2%;text-transform: uppercase;
+}
+.members-text .text-area p:nth-of-type(2){
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.2rem; font-weight: 300; color:#FF971E;margin-bottom: 0%;margin-top: 2%;text-transform: uppercase;
+}
+.members-text .text-area p:last-of-type{
+    font-family: 'Red Hat Display', sans-serif;
+    width:100%;font-size: 3rem; font-weight: 800; color:transparent; -webkit-text-stroke: 1px #FF971E;text-transform: uppercase; margin-bottom: 0%;margin-top: 0%;
+}
+.members-content .member-instrument{
+    position: absolute;top:50%; left:50%; transform: translate(-0%, -50%) rotate(30deg); position: absolute; opacity: 0.5;
+}
+.svg-stars{
+    position: absolute; width: 100%; height: 100%;
+}
+.svg-stars svg{
+    position: absolute; z-index: 1003;
+}
+.svg-stars svg:first-of-type{
+    width: 30px; fill:#FF971E; top:7%; left: 30%; transform: rotate(-10deg);animation: rotate 3s infinite linear;
+}
+.svg-stars svg:nth-of-type(2){
+    width: 60px; fill:#1673ff; bottom:10%; left: 0%; animation: rotate 3s infinite linear;
+}
+.svg-stars svg:last-of-type{
+    width: 80px; fill:#EB2814; top:50%; right: 10%;animation: rotate 5s infinite linear;
+}
+
