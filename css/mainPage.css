@@ -9,13 +9,17 @@ body{
 .wrap{
     width: 100%; height: 100%;position: relative;background:#1E290C;overflow: hidden; 
 }
-/* section{
-    width: 100%; height: 100%; position: absolute;
-    background-color: #1E290C; z-index: 1500;
-} */
-section:first-of-type{
+section{
     width: 100%; height: 100%; position: absolute;
     background-color: #1E290C; z-index: 1500; display: none;
+}
+section.active{
+    width: 100%; height: 100%; position: absolute;
+    background-color: #1E290C; z-index: 1500;display: block;
+}
+/* section:first-of-type{
+    width: 100%; height: 100%; position: absolute;
+    background-color: #1E290C; z-index: 1500; display: block;
 }
 section:nth-of-type(2){
     width: 100%; height: 100%; position: absolute;
@@ -27,8 +31,8 @@ section:nth-of-type(3){
 }
 section:last-of-type{
     width: 100%; height: 100%; position: absolute;
-    background-color: #1E290C; z-index: 1500; display: block;
-}
+    background-color: #1E290C; z-index: 1500; display: none;
+} */
 .main-container {
     width: 100%; height:100%;position: relative;
 }
