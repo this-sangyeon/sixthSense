@@ -133,5 +133,32 @@
     line-height: 1.5rem;
 }
 .lyrics-container{
-    position: absolute; top:0; left:0; display: none;
+    position: absolute; top:50%; right:10%; transform:translateY(-50%);
+    width: 40%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px;
 }
+.lyrics-content {
+    position: relative; width: 100%; height: 100%;
+}
+.lyrics-close-btn{
+    position: absolute;top:50%; left:-5%; transform:translateY(-50%);
+    width: 50px; height: 50px;
+}
+.lyrics-close-btn button{
+    width: 100%; height: 100%; position: relative; border-radius: 50%; border:none; background:#FF961E; outline: none;
+}
+.lyrics-close-btn button span{
+    position: absolute; width: 70%; height: 1px; background: white;
+    top:50%; left:50%; transform:translate(-50%, -50%);
+}
+.lyrics-close-btn button span:first-of-type{transform:translate(-50%, -50%) rotate(-45deg);}
+.lyrics-close-btn button span:last-of-type{transform:translate(-50%, -50%) rotate(45deg);}
+.lyrics-area{
+    width: 100%; height: 100%; position: relative;
+}
+.lyrics-area p{
+    width: 55%; height: 70%; position: absolute; top:50%; left:50%;transform:translate(-50%, -50%);
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 100;overflow-y: scroll; margin: 0;
+    color:black;
+}
+.lyrics-area p::-webkit-scrollbar {width: 5px;background-color:#ffffff;  border-radius: 1px; }
+.lyrics-area p::-webkit-scrollbar-thumb{background-color: #FF961E; border-radius: 10px;}
