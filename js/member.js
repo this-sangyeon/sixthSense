@@ -57,7 +57,7 @@ let membersInfo = [
         instName:'DRUM'
     }
 ]
-let MemberMusicInst = [
+var MemberMusicInst = [
     new Audio('./img/media/memsound/WARNING.mp3'),
     new Audio('./img/media/memsound/OUCH.mp3'),
     new Audio('./img/media/memsound/BeLazy.mp3'),
@@ -81,7 +81,12 @@ for(let i = 0; i < memberList.length; i++){
             membersBirth.innerText = membersInfo[membersIndex].birth;
             membersIinstrument.innerHTML = membersInfo[membersIndex].instName;
         }
+        // if(membersIndex === 0){
+        //    console.log('ddd');
+        //    MemberMusicInst[0].play();
+        // }
         memberList[i].classList.add('active');
+        
     })
 }
 
@@ -90,13 +95,69 @@ membersMainImage.addEventListener('mouseenter',()=>{
     membersMainImage.classList.add('active');
     membersSubImage.classList.add('active');
     mouseHoverSign.classList.add('active');
+    
+    if(membersIndex === 0){
+        console.log('ddd');
+        MemberMusicInst[0].play();
+    }
+    else if(membersIndex === 1){
+        MemberMusicInst[1].play();
+    }
+    else if(membersIndex === 2){
+        MemberMusicInst[2].play();
+    }
+    else if(membersIndex === 3){
+        MemberMusicInst[3].play();
+    }
+    else if(membersIndex === 4){
+        MemberMusicInst[4].play();
+    }
 })
+
 membersMainImage.addEventListener('mouseleave',()=>{
     console.log('out');
     membersMainImage.classList.remove('active');
     membersSubImage.classList.remove('active');
+
+    if(membersIndex === 0){
+        console.log('ddd');
+        MemberMusicInst.currentTime = 0;
+        MemberMusicInst[0].pause();
+    }
+    else if(membersIndex === 1){
+        MemberMusicInst.currentTime = 0;
+        MemberMusicInst[1].pause();
+    }
+    else if(membersIndex === 2){
+        MemberMusicInst.currentTime = 0;
+        MemberMusicInst[2].pause();
+    }
+    else if(membersIndex === 3){
+        MemberMusicInst.currentTime = 0;
+        MemberMusicInst[3].pause();
+    }
+    else if(membersIndex === 4){
+        MemberMusicInst.currentTime = 0;
+        MemberMusicInst[4].pause();
+    }
+    // MemberMusicInst.currentTime = 0;
+    // MemberMusicInst.pause();
+   
     setTimeout(()=>{
         mouseHoverSign.classList.remove('active'); 
     }, 300)
 
 })
+// function MemberMusicPlay(e){
+//     for(let i = 0; i < memberList.length; i++){
+//         let target = e.currentTarget;
+//         musicIndex = memberList.indexOf(target);
+
+//         if(musicIndex === 0){
+//             MemberMusicInst[0].play();
+//         }
+//         if(musicIndex === 1){
+//             MemberMusicInst[1].play();
+//         }
+//     }
+// }
