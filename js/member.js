@@ -57,6 +57,13 @@ let membersInfo = [
         instName:'DRUM'
     }
 ]
+let MemberMusicInst = [
+    new Audio('./img/media/memsound/WARNING.mp3'),
+    new Audio('./img/media/memsound/OUCH.mp3'),
+    new Audio('./img/media/memsound/BeLazy.mp3'),
+    new Audio('./img/media/memsound/Illtry.mp3'),
+    new Audio('./img/media/memsound/Congratulations.mp3')
+]
 
 for(let i = 0; i < memberList.length; i++){
     memberList[i].addEventListener('click', (e)=>{
@@ -91,4 +98,5 @@ membersMainImage.addEventListener('mouseleave',()=>{
     setTimeout(()=>{
         mouseHoverSign.classList.remove('active'); 
     }, 300)
+
 })
