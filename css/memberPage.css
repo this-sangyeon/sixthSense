@@ -41,29 +41,33 @@ width: 100%;height: 20%; position: relative ;  top:0
      position: relative; width: 100%; height: 100%;   display: flex; justify-content: center; align-items: center;
 }
 .members-images .members-hover .members-imgs img{
-   top:50%; left:50%; transform: translate(-50%, -50%); position: absolute; width: 65%;
+   top:50%; left:50%; transform: translate(-50%, -50%); position: absolute; width: 65%; transition: 0.3s ease-in-out;
 }
 .members-images .members-hover .members-imgs img:first-of-type{
-    z-index: 1000;
+    z-index: 1001; cursor: pointer; 
+ }
+ .members-images .members-hover .members-imgs img:first-of-type.active{
+    z-index: 1001; cursor: pointer; transform: translate(-50%, -50%) rotate(-10deg); transition: 0.3s ease-in-out;
  }
  .members-images .members-hover .members-imgs img:last-of-type{
-    z-index: 1001; width: 40%;
+    z-index: 1000; width: 40%;
  }
- .members-images .members-hover .hoverfollow{
-    position: absolute; top:18%; left:20%; transform: translate(-50%, -50%); position: absolute; z-index: 1002;
-    width: 80px; height: 80px; border-radius: 50%; background: white; 
-    display: flex; justify-content: center; align-items: center; pointer-events: none;
+ .members-images .members-hover .members-imgs img:last-of-type.active{
+    z-index: 1000; width: 40%; top:40%;left:70%; transform: translate(10%, -70%) rotate(10deg);transition: 0.3s ease-in-out;
+ }
+.members-images .members-hover .members-imgs p{
+    font-family: 'Noto Sans KR', sans-serif; font-size: 1rem; font-weight: 100; letter-spacing: 1px;
+    color:white;z-index: 1002; position: absolute; top:10%; display: block;
 }
-.members-images .members-hover .hoverfollow p{
-    font-family: 'Red Hat Display', sans-serif; letter-spacing: 1px;
-    font-size: 0.8em; font-weight: 800; line-height: 1.2em; text-align: center; color:black;
+.members-images .members-hover .members-imgs p.active{
+    display: none;
 }
 .members-text{
     width: 50%; height: 100%;  position: relative;
 }
 .members-text .text-area{
-    width: 50%; height: 20%; background-color: rgb(255, 255, 255); position: absolute; 
-    bottom:5%; left:5%; transform: translateY(-50%); padding: 2%; display: flex; flex-direction: column;
+    width: 50%;  background-color: rgb(255, 255, 255); position: absolute;
+    top:70%; left:5%; transform: translateY(-50%); padding: 2%; display: flex; flex-direction: column;
 }
 .members-text .text-area h1{
     font-size: 3rem; letter-spacing: 2px; font-weight: 800;  color:red; margin: 0;font-family: 'Red Hat Display', sans-serif;
@@ -80,8 +84,8 @@ width: 100%;height: 20%; position: relative ;  top:0
     font-size: 1.2rem; font-weight: 300; color:#FF971E;margin-bottom: 0%;margin-top: 2%;text-transform: uppercase;
 }
 .members-text .text-area p:last-of-type{
-    font-family: 'Red Hat Display', sans-serif;
-    width:100%;font-size: 3rem; font-weight: 800; color:transparent; -webkit-text-stroke: 1px #FF971E;text-transform: uppercase; margin-bottom: 0%;margin-top: 0%;
+    font-family: 'Red Hat Display', sans-serif;line-height: 3rem;
+    width:100%;font-size: 3rem; font-weight: 800; color:transparent; -webkit-text-stroke: 1px #FF971E;text-transform: uppercase; margin-bottom: 0%;margin-top: 5%;
 }
 .members-content .member-instrument{
     position: absolute;top:50%; left:50%; transform: translate(-0%, -50%) rotate(30deg); position: absolute; opacity: 0.5;
