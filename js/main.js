@@ -11,14 +11,18 @@ for(let i = 0; i < senseNavList.length; i++){
         for(let i = 0; i < section.length; i++){
             section[i].classList.remove('active');
         }
+        for(let i = 0; i < senseNavList.length; i++){
+            senseNavList[i].classList.remove('active');
+        }
         section[i].classList.add('active');
+        senseNavList[i].classList.add('active');
         if(naveListIndex === 0){
             console.log('click1');
             transitionBox.style.width ="0%";
             transitionBox.style.height ="0%";
             transitionBox.style.background ="none";
-            transitionBox.style.bottom ="0%";
-            transitionBox.style.right ="0%";
+            transitionBox.style.bottom ="20%";
+            transitionBox.style.right ="20%";
             
         }
         else if(naveListIndex === 1){

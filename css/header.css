@@ -16,7 +16,8 @@ header .logo > a > img {width: 70px;}
 .sense-nav {height: 100%; margin-right: 2%; text-align: right; position: relative;}
 .sense-nav ul{display: flex; flex-direction: column; justify-content: center;}
 .sense-nav ul li { list-style: none;  margin-bottom:7%;  cursor: pointer;}
-.sense-nav ul li a{font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 700;font-size: 1.5rem; color:#FF5D2C;text-decoration: none;}
+.sense-nav ul li a{font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 700;font-size: 1.5rem; color:rgb(255, 255, 255);text-decoration: none;}
+.sense-nav ul li a.active{font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 700;font-size: 1.5rem; color:#EB2814;text-decoration: none;}
 
 footer{
     position:relative; width: 100%; height: 20%; bottom:0; z-index: 1500; display: flex; justify-content: space-between;
