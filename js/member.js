@@ -6,7 +6,7 @@ const membersRealName = document.querySelector('.members-text > .text-area > p:f
 const membersBirth = document.querySelector('.members-text > .text-area > p:nth-of-type(2)');
 const membersIinstrument = document.querySelector('.members-text > .text-area > p:last-of-type');
 const IinstrumentImages = document.querySelector('.member-instrument > img');
-const mouseHoverSign = document.querySelector('.members-imgs > p')
+const mouseHoverSign = document.querySelector('.members-imgs > p');
 
 memberList = Array.prototype.slice.call(memberList);
 
