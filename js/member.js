@@ -65,6 +65,8 @@ var MemberMusicInst = [
     new Audio('./img/media/memsound/Congratulations.mp3')
 ]
 
+
+
 for(let i = 0; i < memberList.length; i++){
     memberList[i].addEventListener('click', (e)=>{
         let targetEl = e.currentTarget;
