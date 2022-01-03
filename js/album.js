@@ -1,9 +1,10 @@
 const albumContent = document.querySelectorAll('.album-content');
 let albumList = document.querySelectorAll('.album-list ul > li > p');
+const anotherImages  = document.querySelector('.album-images > .another-images > img:first-of-type');
+const another_Images  = document.querySelector('.album-images > .another-images > img:last-of-type');
 const trackListWrap = document.querySelector('.track-list');
 let trackList = document.querySelectorAll('.track-list > .track-music');
-const albumImages = document.querySelectorAll('.track-image > p');
-const trackNumber = document.querySelectorAll('.album-images > .another-images > img');
+const trackNumber = document.querySelectorAll('.track-image > p');
 const trackNumText = document.querySelector('.track-text > .text-wrap > p:first-of-type');
 const trackTitle = document.querySelector('.track-text > .text-wrap > h3');
 const trackLyricist = document.querySelector('.track-text > .text-wrap > p:nth-of-type(2)');
@@ -13,6 +14,8 @@ const trackLyrics = document.querySelector('.lyrics-content > .lyrics-area > p')
 
 const playBtn = document.querySelector('.sub-btn-area > button:first-of-type');
 const lyricsBtn = document.querySelector('.sub-btn-area > button:last-of-type');
+const lyricsCloseBtn = document.querySelector('.lyrics-close-btn');
+const lyricsContainer = document.querySelector('.lyrics-container');
 
 albumList = Array.prototype.slice.call(albumList);
 trackList = Array.prototype.slice.call(trackList);
@@ -26,7 +29,7 @@ var trackSoundEls = [
     new Audio('./img/media/Best Part.mp3')
 ]
 
-let trackInfo = [
+let trackArrayInfo = [
     {
         title :'FOR ME',
         num : '1',
@@ -83,5 +86,64 @@ let trackInfo = [
     }
 ]
 
+senseNavList[2].addEventListener('click',()=>{
+    console.log('ccccc');
+    setTimeout(()=>{
+        anotherImages.classList.add('active');
+        another_Images.classList.add('active');
+    },300)
+})
+
+for(let i = 0; i < albumList.length; i++){
+    albumList[i].addEventListener('click',(e)=>{
+        let listTarget = e.currentTarget;
+        albumListIndex = albumList.indexOf(listTarget);
+
+       for(let j = 0; j < albumList.length; j++){
+        albumList[j].classList.remove('active');
+       }
+       for(let i = 0; i < albumList.length; i++){
+        albumContent[i].classList.remove('active');
+       }
+       albumList[i].classList.add('active');
+       albumContent[i].classList.add('active');
+
+        if(albumListIndex === 0){
+            console.log('확인');
+            setTimeout(()=>{
+                anotherImages.classList.add('active');
+                another_Images.classList.add('active');
+            },300)
+        }
+        if(albumListIndex === 1){
+            console.log('확인~');
+            trackListWrap.classList.add('active');
+            anotherImages.classList.remove('active');
+            another_Images.classList.remove('active');
+        }
+    })
+}
 
 
+for(let i = 0; i < trackList.length; i++){
+    trackList[i].addEventListener('click',(e)=>{
+        let targetTrack = e.currentTarget;
+        trackIndex = trackList.indexOf(targetTrack);
+
+        for(let j = 0; j < trackList.length; j++){
+            trackList[j].classList.remove('active');
+        }
+        trackList[i].classList.add('active');
+
+        
+    })
+}
+
+lyricsBtn.addEventListener('click',()=>{
+    lyricsContainer.classList.add('active');
+    lyricsCloseBtn.classList.add('active');
+})
+lyricsCloseBtn.addEventListener('click',()=>{
+    lyricsContainer.classList.remove('active');
+    lyricsCloseBtn.classList.remove('active');
+})
