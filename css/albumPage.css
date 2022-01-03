@@ -17,37 +17,37 @@
     margin: 0; list-style: none; cursor: pointer;
 } 
 .album-area .album-list li p{
-    font-family: 'Red Hat Display', sans-serif;font-size: 2rem;font-weight: 800;text-transform: uppercase; margin: 0;
+    font-family: 'Red Hat Display', sans-serif;font-size: 2rem;font-weight: 800;text-transform: uppercase; margin: 0;color:white;
+} 
+.album-area .album-list li p.active{
+    font-family: 'Red Hat Display', sans-serif;font-size: 2rem;font-weight: 800;text-transform: uppercase; margin: 0; color:#FF961E;
 } 
 .album-area .album-list ul li .track-list{
     width: 100%;  position: absolute;left:0; top:50%;
     font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;
-    height: 0%;  opacity:0; transition: 0.3s;
+    height: 0%;  opacity:0; transition: 0.5s ease-in-out;
 } 
 .album-area .album-list ul li .track-list.active{
     width: 100%;  position: absolute;left:0; top:50%;
     font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;
-    height: 100%;  opacity:1; transition: 0.3s;
+    height: 100%;  opacity:1; transition: 0.5s ease-in-out;
 }
 .album-area .album-list ul li .track-list >.track-music {
-   margin-bottom: 1%;
-} 
+   margin-bottom: 1%; color:rgba(255, 255, 255, 0.575);
+}
+.album-area .album-list ul li .track-list >.track-music.active {
+    margin-bottom: 1%;color:rgb(255, 255, 255);
+ }  
 
 .album-content-wrap{
     width: 80%; height: 100%; position: relative;
 }
 .album-content{
-    width: 100%; height: 100%; position: absolute; display: block;
+    width: 100%; height: 100%; position: absolute; display: none;
 }
 .album-content.active{
     width: 100%; height: 100%; position: absolute;  display: block;
 }
-/* .album-content:first-of-type{
-    display: none;
-}
-.album-content:last-of-type{
-    display: block;
-} */
 .album-wrap {
     display: flex; width: 100%; height: 100%;
 }
@@ -56,26 +56,38 @@
 }
 .album-wrap .album-images img{
     top:50%; left: 50%; transform: translate(-50%, -50%); position: absolute;
-    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.439); z-index: 1005;
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.439); z-index: 1005;width: 60%; height: auto;
 }
 .album-wrap .album-images .another-images{
- width: 100%; height: 100%; position: absolute;z-index: 1000;
+ width: 100%; height: 100%; position: relative;z-index: 1000;
 }
 .album-wrap .album-images .another-images img{
-   width: 55%;
-   }
+   width: 55%; top:50%; left: 50%; transform: translate(-50%, -50%); position: absolute;
+}
+.album-wrap .album-images .another-images img:first-of-type{
+   position: absolute; transition: 0.3s ease-in-out; top:50%; left: 50%; transform: translate(-50%, -50%);
+ }
+ .album-wrap .album-images .another-images img:last-of-type{
+   position: absolute;transition: 0.3s ease-in-out;top:50%; left: 50%; transform: translate(-50%, -50%);
+ }
+ .album-wrap .album-images .another-images img:first-of-type.active{
+    width: 55%; top:20%; left: 30%; transform: translate(-50%, -50%) rotate(-25deg); transition: 0.3s ease-in-out; position: absolute;
+ }
+ .album-wrap .album-images .another-images img:last-of-type.active{
+    width: 70%;  top:80%; left: 70%; transform: translate(-50%, -50%) rotate(15deg); transition: 0.3s ease-in-out; position: absolute;
+ }
 .album-wrap .album-text{
-    width: 50%; height: 100%; position: relative;
+    width: 50%; height: 100%; position: relative; z-index: 1000;
 }
 .album-wrap .album-text .text-content{
     width: 80%; height: 45%;
     top:50%; transform: translateY(-50%); position: absolute;
 }
 .album-wrap .album-text .text-content h1{
-    font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 700;font-size: 2.5rem; margin: 0; color: #FF961E;
+    font-family: 'Red Hat Display', sans-serif; cursor: pointer;font-weight: 700;font-size: 2.5rem; margin: 0; color: white;
 }
 .album-wrap .album-text .text-content h2{
-    font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 500;font-size: 1.5rem; margin: 0;color: #FF961E;
+    font-family: 'Red Hat Display', sans-serif; cursor: pointer;font-weight: 500;font-size: 1.5rem; margin: 0;color: white;
 }
 .album-wrap .album-text .text-content p{
     font-family: 'Noto Sans KR', sans-serif; width: 95%; height: 80%; overflow-y: scroll; 
@@ -93,10 +105,10 @@
 }
 .track-image p{
   position: absolute; font-size: 10rem; top:15%; left:5%; color:#FF961E;
-  font-family: 'Montserrat', sans-serif; cursor: pointer;font-weight: 800; margin: 0;
+  font-family: 'Red Hat Display', sans-serif; cursor: pointer;font-weight: 800; margin: 0;
 }
 .track-image img{
-   top:50%; left:50%; transform:translate(-50%, -50%); position: absolute; width: 70%;
+   top:50%; left:50%; transform:translate(-50%, -50%); position: absolute; width: 60%;
    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.439);
 }
 .track-text{
@@ -113,38 +125,45 @@
     border:2px solid #FF961E; background: white; margin-bottom: 5%; border-radius: 20px;cursor: pointer;
 }
 .sub-btn-area button p{
-    font-family: 'Montserrat', sans-serif;font-weight: 700;font-size: 1rem; margin: 0; color: #FF961E;
+    font-family: 'Red Hat Display', sans-serif;font-weight: 700;font-size: 1rem; margin: 0; color: #FF961E;
 }
 .track-text .text-area .text-wrap{
     width: 100%; height: 100%; display: flex; flex-direction: column;
 }
 .track-text .text-area .text-wrap h3{
-    font-family: 'Montserrat', sans-serif;font-weight: 700;font-size: 3rem; text-transform: uppercase; margin: 0;
+    font-family: 'Red Hat Display', sans-serif; font-weight: 700;font-size: 3rem; text-transform: uppercase; margin: 0;
     margin-bottom: 5%;  margin-top: 5%;
 }
 .track-text .text-area .text-wrap p:first-of-type{
-    font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 1rem; text-transform: uppercase;
+    font-family: 'Red Hat Display', sans-serif; font-weight: 500;font-size: 1rem; text-transform: uppercase;
 }
 .track-text .text-area .text-wrap p:nth-of-type(2){
-    font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 1rem; text-transform: uppercase;
+    font-family: 'Red Hat Display', sans-serif;font-weight: 500;font-size: 1rem; text-transform: uppercase;
 }
 .track-text .text-area .text-wrap p:nth-of-type(3){
-    font-family: 'Montserrat', sans-serif;font-weight: 200;font-size: 1rem; text-transform: uppercase; margin: 0;
+    font-family: 'Red Hat Display', sans-serif;font-weight: 200;font-size: 1rem; text-transform: uppercase; margin: 0;
 }
 .track-text .text-area .text-wrap p:last-of-type{
-    font-family: 'Montserrat', sans-serif;font-weight: 200;font-size: 1rem; text-transform: uppercase; margin: 0; margin-top: 5%;margin-bottom: 5%;
+    font-family: 'Red Hat Display', sans-serif;font-weight: 200;font-size: 1rem; text-transform: uppercase; margin: 0; margin-top: 5%;margin-bottom: 5%;
     line-height: 1.5rem;
 }
 .lyrics-container{
     position: absolute; top:50%; right:10%; transform:translateY(-50%);
-    width: 40%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px;
+    width: 0%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px; transition: 0.3s ease-in-out;
+}
+.lyrics-container.active{
+    position: absolute; top:50%; right:10%; transform:translateY(-50%);
+    width: 40%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px;transition: 0.3s ease-in-out;
 }
 .lyrics-content {
     position: relative; width: 100%; height: 100%;
 }
 .lyrics-close-btn{
     position: absolute;top:50%; left:-5%; transform:translateY(-50%);
-    width: 50px; height: 50px;
+    width: 50px; height: 50px; display: none; z-index: 1000;
+}
+.lyrics-close-btn.active{
+    display: block;
 }
 .lyrics-close-btn button{
     width: 100%; height: 100%; position: relative; border-radius: 50%; border:none; background:#FF961E; outline: none;
@@ -165,3 +184,28 @@
 }
 .lyrics-area p::-webkit-scrollbar {width: 5px;background-color:#ffffff;  border-radius: 1px; }
 .lyrics-area p::-webkit-scrollbar-thumb{background-color: #FF961E; border-radius: 10px;}
+
+
+.equalizer{
+    position: absolute;height: 100px;width: 50px;  
+    top:-90%;right:207%;transform: translate(-50%, -50%) scale(0.25); 
+}
+.equalizer >.bar{
+    width: 100%;height: 0;position: absolute;bottom: 0;left: 0;
+    background:  white; transition: height 0.4s ease;
+    animation: bar 0.4s 0s both alternate ease infinite;
+    display: flex;margin-left:5px;
+}
+.equalizer > .bar-1 {animation-delay: 0.2s;margin-left:5px;width: 20%;}
+.equalizer >.bar-2 {margin-left:30px;width: 20%;animation-delay: 0.4s;}
+.equalizer >.bar-3 {margin-left:60px;width: 20%;animation-delay: 0.6s;}
+.equalizer >.bar-4 {margin-left:90px;width: 20%;animation-delay: 0.8s;}
+.equalizer >.bar-5 {margin-left:120px;width: 20%;animation-delay: 1s;}
+@keyframes bar {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
