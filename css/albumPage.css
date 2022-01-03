@@ -33,10 +33,10 @@
     height: 100%;  opacity:1; transition: 0.5s ease-in-out;
 }
 .album-area .album-list ul li .track-list >.track-music {
-   margin-bottom: 1%; color:rgba(255, 255, 255, 0.575);
+   margin-bottom: 4%; color:rgba(255, 255, 255, 0.575);
 }
 .album-area .album-list ul li .track-list >.track-music.active {
-    margin-bottom: 1%;color:rgb(255, 255, 255);
+    margin-bottom: 4%;color:rgb(255, 255, 255);font-weight: 00;
  }  
 
 .album-content-wrap{
@@ -104,7 +104,7 @@
     width: 50%;height: 100%; position: relative;
 }
 .track-image p{
-  position: absolute; font-size: 10rem; top:15%; left:5%; color:#FF961E;
+  position: absolute; font-size: 10rem; top:15%; left:10%; color:#EB2814;
   font-family: 'Red Hat Display', sans-serif; cursor: pointer;font-weight: 800; margin: 0;
 }
 .track-image img{

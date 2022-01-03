@@ -4,12 +4,12 @@ const anotherImages  = document.querySelector('.album-images > .another-images >
 const another_Images  = document.querySelector('.album-images > .another-images > img:last-of-type');
 const trackListWrap = document.querySelector('.track-list');
 let trackList = document.querySelectorAll('.track-list > .track-music');
-const trackNumber = document.querySelectorAll('.track-image > p');
-const trackNumText = document.querySelector('.track-text > .text-wrap > p:first-of-type');
-const trackTitle = document.querySelector('.track-text > .text-wrap > h3');
-const trackLyricist = document.querySelector('.track-text > .text-wrap > p:nth-of-type(2)');
-const trackComposer = document.querySelector('.track-text > .text-wrap > p:nth-of-type(3)');
-const trackInfo = document.querySelector('.track-text > .text-wrap > p:last-of-type');
+const trackNumber = document.querySelector('.track-image > p');
+const trackTitle = document.querySelector('.track-text > .text-area > .text-wrap > h3');
+const trackNumText = document.querySelector('.track-text > .text-area > .text-wrap > p:first-of-type');
+const trackLyricist = document.querySelector('.track-text > .text-area > .text-wrap > p:nth-of-type(2)');
+const trackComposer = document.querySelector('.track-text >  .text-area >.text-wrap > p:nth-of-type(3)');
+const trackInfo = document.querySelector('.track-text > .text-area > .text-wrap > p:last-of-type');
 const trackLyrics = document.querySelector('.lyrics-content > .lyrics-area > p');
 
 const playBtn = document.querySelector('.sub-btn-area > button:first-of-type');
@@ -33,7 +33,7 @@ let trackArrayInfo = [
     {
         title :'FOR ME',
         num : '1',
-        trackNum :'First track',
+        trackNum :'First',
         lyricist : '작사 : Young K',
         composer : '작곡 : Jae, 성진, Young K, 원필, 홍지상',
         info : 'For me는 80년대 록 사운드에 90년대 모던 록 코드라인이 결합된 트랙.꿈과 다른 현실에 애써 외면하고 있던 자기 자신을 이제부터라도 좀 더 알아가고 사랑해야겠다는 내용을 "이젠 알아주고 싶어 여태 혼자 잘 해왔다고 말해 줄게 나에게"와 같은 가사로 노래한다. ',
@@ -132,10 +132,18 @@ for(let i = 0; i < trackList.length; i++){
 
         for(let j = 0; j < trackList.length; j++){
             trackList[j].classList.remove('active');
+
+            trackTitle.innerText = trackArrayInfo[trackIndex].title;
+            trackNumber.innerText = trackArrayInfo[trackIndex].num;
+            trackNumText.innerText = trackArrayInfo[trackIndex].trackNum;
+            trackLyricist.innerText = trackArrayInfo[trackIndex].lyricist;
+            trackComposer.innerText = trackArrayInfo[trackIndex].composer;
+            trackInfo.innerText = trackArrayInfo[trackIndex].info;
+            trackLyrics.innerHTML = trackArrayInfo[trackIndex].lyrics;
         }
+
         trackList[i].classList.add('active');
 
-        
     })
 }
 
