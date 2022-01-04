@@ -36,7 +36,7 @@ for(let i = 0; i < senseNavList.length; i++){
         }
         else if(naveListIndex === 2){
             console.log('click3');
-            transitionBox.style.width ="80%";
+            transitionBox.style.width ="70%";
             transitionBox.style.height ="100%";
             transitionBox.style.background ="#FF971E";
             transitionBox.style.bottom ="0%";
