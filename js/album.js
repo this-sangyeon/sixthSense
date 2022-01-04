@@ -13,16 +13,16 @@ const trackInfo = document.querySelector('.track-text > .text-area > .text-wrap 
 const trackLyrics = document.querySelector('.lyrics-content > .lyrics-area > p');
 const trackMusic = document.querySelector('.sub-btn-area > button:first-of-type > audio');
 
-const playBtn = document.querySelector('.sub-btn-area > button:first-of-type');
+
+const playBtn = document.querySelector('.sub-btn-area > button:first-of-type ');
+const stopBtn = document.querySelector('.sub-btn-area > button:nth-of-type(2)');
 const lyricsBtn = document.querySelector('.sub-btn-area > button:last-of-type');
 const lyricsCloseBtn = document.querySelector('.lyrics-close-btn');
 const lyricsContainer = document.querySelector('.lyrics-container');
 
-let equalizerEls = document.querySelectorAll('.equalizer > .bar');
-
 albumList = Array.prototype.slice.call(albumList);
 trackList = Array.prototype.slice.call(trackList);
-equalizerEls = Array.prototype.slice.call(equalizerEls);
+
 
 var trackSoundEls = [
     new Audio('./img/media/forme.mp3'),
@@ -158,27 +158,7 @@ for(let i = 0; i < trackList.length; i++){
     })
 }
 
-let isPlay = true;
-
-for(let i=0; i < equalizerEls.length; i++){
-    equalizerEls[i].style.animationPlayState = "paused";
-} 
 playBtn.addEventListener('click',()=>{
-    // if(isPlay = true){
-    //     playBtn.innerText = "Stop";
-    //     console.log('1');
-    //     for(let i = 0; i < trackSoundEls.length;i++){
-    //         trackSoundEls.play();
-    //     }
-       
-    //     isPlay = false;
-    // }else if(isPlay === false){
-    //     trackSoundEls.pause();
-    //     trackSoundEls.currentTime = 0;
-    // }
-    for(let i=0; i < equalizerEls.length; i++){
-        equalizerEls[i].style.animationPlayState = "running";
-      }
     if(trackIndex===0){
         console.log('1');
         trackSoundEls[0].play();
@@ -187,27 +167,59 @@ playBtn.addEventListener('click',()=>{
         console.log('2');
         trackSoundEls[1].play();
     }
-    if(trackIndex[2]){
+    if(trackIndex===2){
         console.log('3');
         trackSoundEls[2].play();
     }
-    if(trackIndex[3]){
+    if(trackIndex===3){
         console.log('4');
         trackSoundEls[3].play();
     }
-    if(trackIndex[4]){
+    if(trackIndex===4){
         console.log('5');
         trackSoundEls[4].play();
     }
-    if(trackIndex[5]){
+    if(trackIndex===5){
         console.log('6');
         trackSoundEls[5].play();
     }
-
-  
-    // trackMusic.play();
-
 })
+
+stopBtn.addEventListener('click',()=>{
+    if(trackIndex===0){
+        console.log('1');
+        trackSoundEls.currentTime = 0;
+        trackSoundEls[1].currentTime = 0;
+        trackSoundEls[0].pause();
+    }
+     if(trackIndex===1){
+        console.log('2');
+        trackSoundEls[1].currentTime = 0;
+        trackSoundEls[1].pause();
+    }
+    if(trackIndex===2){
+        console.log('3');
+        trackSoundEls[2].currentTime = 0;
+        trackSoundEls[2].pause();
+    }
+    if(trackIndex===3){
+        console.log('4');
+        trackSoundEls[3].currentTime = 0;
+        trackSoundEls[3].pause();
+    }
+    if(trackIndex===4){
+        console.log('5');
+        trackSoundEls[4].currentTime = 0;
+        trackSoundEls[4].pause();
+    }
+    if(trackIndex===5){
+        console.log('6');
+        trackSoundEls[5].currentTime = 0;
+        trackSoundEls[5].pause();
+    }
+})
+
+
 lyricsBtn.addEventListener('click',()=>{
     lyricsContainer.classList.add('active');
     lyricsCloseBtn.classList.add('active');
