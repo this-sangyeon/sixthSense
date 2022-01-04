@@ -5,6 +5,7 @@ const nextBtn = document.querySelector('.next-button');
 
 // var opacityVideo;
 var count = 0;
+
 // opacityVideo.style.opacity = 0.5;
 prevBtn.addEventListener('click', function(){
     console.log('클릭 눌리는지요');
