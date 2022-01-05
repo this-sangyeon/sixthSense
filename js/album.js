@@ -94,6 +94,7 @@ let trackArrayInfo = [
         lyrics : '매일 밤<br>눈을 감으면<br>점점 두려워져 내일이 없을까 봐<br>그렇게 난 살아가 하루하루를 아쉬워해<br>마지막 날 미소가 가득 담겨 있게<br>나에게 쥐어지는 매일이<br>Gonna be my Best part<br><br>한 순간도 나에게 있어서는<br>의미가 없지 않아<br>언제가 끝일지 모르는 지금이<br>Best part<br><br>두려움 그건 이제 날<br>움직이게 하는 이유가 된 걸거야<br>오늘의 난 살아가<br>내일의 내가 행복하게<br>마지막 날 미소가 가득 담겨 있게<br>나에게 쥐어지는 매일이<br>Gonna be my Best part<br><br>한 순간도 나에게 있어서는<br>의미가 없지 않아<br>언제가 끝일지 모르는 지금이<br>Best part<br><br>미래가 찾아온 날<br>그때가 더 아름답도록<br>Every moment’s gonna be my best part<br>한 순간도 나에게 있어서는<br>의미가 없지 않아<br>언제가 끝일지 모르는 지금이<br>Best part',
         // audio : 'img/media/Best Part.mp3'
     }
+    
 ]
 
 senseNavList[2].addEventListener('click',()=>{
@@ -120,6 +121,7 @@ for(let i = 0; i < albumList.length; i++){
 
         if(albumListIndex === 0){
             console.log('확인');
+            trackListWrap.classList.remove('active');
             setTimeout(()=>{
                 anotherImages.classList.add('active');
                 another_Images.classList.add('active');
