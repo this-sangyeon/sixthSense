@@ -63,6 +63,12 @@
     .track-text .text-area .text-wrap p:nth-of-type(3){font-size: 1.2rem; margin: 0;}
     .track-text .text-area .text-wrap p:last-of-type{font-size: 1.2rem;margin: 0; margin-top: 5%;margin-bottom: 5%;line-height: 2rem;}
 
+    .lyrics-container.active{
+        width: 70%;
+    }
+    .lyrics-area p{
+        width: 70%; 
+    }
     .video-area{
         flex-direction: column;
     }
@@ -135,6 +141,7 @@
         font-family: 'Red Hat Display', sans-serif; 
         font-size: 2rem;font-weight: 800;color: #ffffff;
     }
+
 }
 
 
