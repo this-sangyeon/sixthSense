@@ -29,8 +29,8 @@ section.active{
     font-family: 'Red Hat Display', sans-serif;font-weight: 800;font-size: 8rem;letter-spacing: -5px;text-align: left;
     background: url("../img/grad/grad4.gif");background-size: cover; 
     -webkit-text-fill-color: transparent;-webkit-background-clip: text;pointer-events: none; transition: ease-in 0.5s;
-    position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); 
-    width: 55%;z-index: 2000;margin:0;
+    position: absolute; top:50%; left:60%; transform: translate(-50%, -50%); 
+    width: 80%;z-index: 2000;margin:0;
 }
 
 .bg-musical-images{position: relative;z-index: 1500; width: 80%; height: 100%; left:50%; transform: translateX(-50%); margin: 0; animation:dung 3s infinite linear;}

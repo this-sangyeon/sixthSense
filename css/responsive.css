@@ -1,71 +1,10 @@
-@media screen and (max-width : 1024px) and (max-height: 1366px){
-    .main-container .bg-section{width: 100%;}
-    .main-container .bg-section h1{width: 70%;}
-    .bg-musical-images > img:first-of-type{height: 25%; top:0%; left:30%; transform: rotate(45deg)}
-    .bg-musical-images > img:nth-of-type(4){height: 25%; top:60%; right:10%;transform: rotate(40deg)}
-    .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:5%;transform: rotate(-10deg)}
+@media screen and (min-width : 901px) and (max-width : 1300px){
 
-    .circle-container{display: none;}
-    .members-content{
-        width: 80%; height: 100%; position: relative; display: flex;  flex-direction: column;
-    }
-    .member-list ul li {font-size: 1.3rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
-    }
-    .members-images{width: 100%; height: 75%;}
-    .members-images .members-hover .members-imgs img{
-        transition: 0.3s ease-in-out; top:50%; left:50%; transform: translate(-50%, -40%); width: 60%;
-    }
-    .members-images .members-hover .members-imgs p{top:15%; font-size: 1.5rem; font-weight: 400;}
-    .members-images .members-hover .members-imgs img:first-of-type.active{transform: translate(-50%, -40%) rotate(-0deg);}
-    .members-images .members-hover .members-imgs img:last-of-type{display: none;}
-    .members-text{width: 100%; height: 25%;  position: relative;}
     .members-text .text-area{
-        width: 30%;top:0; z-index: 1002;left:55%;transform: translateY(-60%);
-    }
-    .members-content .member-instrument{
-        position: absolute;top:50%; left:15%; transform: translate(-50%, -20%) rotate(-25deg); position: absolute; opacity: 0.5;
-    }
-    .album-wrap {flex-direction: column;}
-    .album-wrap .album-images{
-        width: 100%; height: 60%; position: relative;
-    }
-    .album-wrap .album-text{width: 100%; height: 40%; position: relative; z-index: 1000;}
-
-    .album-wrap .album-images img{top:55%; left: 55%; transform: translate(-50%, -50%);}
-    
-    .album-wrap .album-images .another-images img:last-of-type{
-        z-index: 1000;
-      }
-    .album-wrap .album-images .another-images img:last-of-type.active{
-        z-index: 1000;
-        width: 60%;  top:80%; left: 70%; transform: translate(-50%, -10%) rotate(10deg); transition: 0.3s ease-in-out; position: absolute;
-     }
-     .album-wrap .album-text .text-content{
-        width: 70%; height: 45%;
-        top:50%; left:55%; transform: translate(-45%, -50%); position: absolute;
-    }
-    .album-wrap .album-text .text-content p{
-        font-size:1rem; font-weight: 100; color:white; line-height: 1.5rem; text-align: justify; padding-right:20px;
-    }
-    .track-image p{font-size: 13rem; top:85%; left:78%; color:#ff5900;}
-    .track-container{flex-direction: column;}
-    .track-image{width: 100%; height: 60%; position: relative;}
-    .track-image img{top:55%; left: 55%; transform: translate(-50%, -50%);}
-    .sub-btn-area{bottom:20%; flex-direction: row; width: 100%; height: 10%;}
-    .sub-btn-area button{margin-left:2px;margin-right:2px;}
-    .track-text{width: 100%; height: 40%; position: relative;}
-    .track-text .text-area{ width: 70%; height: 100%;top:40%; left:55%; transform: translate(-45%, -50%); position: absolute;}
-    .track-text .text-area .text-wrap h3{margin-bottom: 0%;  margin-top: 0%;font-size: 4rem;}
-    .track-text .text-area .text-wrap p:first-of-type{font-size: 1.5rem; margin: 0;}
-    .track-text .text-area .text-wrap p:nth-of-type(2){font-size: 1.2rem;margin-bottom: 1%;  margin-top: 1%; }
-    .track-text .text-area .text-wrap p:nth-of-type(3){font-size: 1.2rem; margin: 0;}
-    .track-text .text-area .text-wrap p:last-of-type{font-size: 1.2rem;margin: 0; margin-top: 5%;margin-bottom: 5%;line-height: 2rem;}
-
-    .lyrics-container.active{
         width: 70%;
     }
-    .lyrics-area p{
-        width: 70%; 
+    .members-images .members-hover .members-imgs p{
+       display: none;
     }
     .video-area{
         flex-direction: column;
@@ -139,7 +78,113 @@
         font-family: 'Red Hat Display', sans-serif; 
         font-size: 2rem;font-weight: 800;color: #ffffff;
     }
-
 }
 
+@media screen and (min-width : 550px) and (max-width : 1024px){
+    .main-container .bg-section{width: 100%;}
+    /* .main-container .bg-section h1{width: 70%;} */
+    .bg-musical-images > img:first-of-type{height: 25%; top:0%; left:30%; transform: rotate(45deg)}
+    .bg-musical-images > img:nth-of-type(4){height: 25%; top:60%; right:10%;transform: rotate(40deg)}
+    .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:5%;transform: rotate(-10deg)}
 
+    .circle-container{display: none;}
+    .members-content{
+        width: 80%; height: 100%; position: relative; display: flex;  flex-direction: column;
+    }
+    .member-list ul li {font-size: 1rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
+    }
+    .members-images{width: 100%; height: 75%;}
+    .members-images .members-hover .members-imgs img{
+        transition: 0.3s ease-in-out; top:50%; left:50%; transform: translate(-50%, -40%); width: 60%;
+    }
+    .members-images .members-hover .members-imgs p{top:15%; font-size: 1.5rem; font-weight: 400;}
+    .members-images .members-hover .members-imgs img:first-of-type.active{transform: translate(-50%, -40%) rotate(-0deg);}
+    .members-images .members-hover .members-imgs img:last-of-type{display: none;}
+    .members-text{width: 100%; height: 25%;  position: relative;}
+    .members-text .text-area{
+        width: 50%;top:0; z-index: 1002;left:40%;transform: translateY(-60%);
+    }
+    .members-content .member-instrument{
+        position: absolute;top:50%; left:15%; transform: translate(-50%, -20%) rotate(-25deg); position: absolute; opacity: 0.5;
+    }
+    .album-wrap {flex-direction: column;}
+    .album-wrap .album-images{
+        width: 100%; height: 60%; position: relative;
+    }
+    .album-wrap .album-text{width: 100%; height: 40%; position: relative; z-index: 1000;}
+
+    .album-wrap .album-images img{top:55%; left: 55%; transform: translate(-50%, -50%);}
+    
+    .album-wrap .album-images .another-images img:last-of-type{
+        z-index: 1000;
+      }
+    .album-wrap .album-images .another-images img:last-of-type.active{
+        z-index: 1000;
+        width: 60%;  top:80%; left: 70%; transform: translate(-50%, -10%) rotate(10deg); transition: 0.3s ease-in-out; position: absolute;
+     }
+     .album-wrap .album-text .text-content{
+        width: 70%; height: 45%;
+        top:50%; left:55%; transform: translate(-45%, -50%); position: absolute;
+    }
+    .album-wrap .album-text .text-content p{
+        font-size:1rem; font-weight: 100; color:white; line-height: 1.5rem; text-align: justify; padding-right:20px;
+    }
+    .track-image p{font-size: 13rem; top:85%; left:78%; color:#ff5900;}
+    .track-container{flex-direction: column;}
+    .track-image{width: 100%; height: 60%; position: relative;}
+    .track-image img{top:55%; left: 55%; transform: translate(-50%, -50%);}
+    .sub-btn-area{bottom:5%; flex-direction: row; width: 100%; height: 10%;}
+    .sub-btn-area button{margin-left:2px;margin-right:2px;}
+    .track-text{width: 100%; height: 40%; position: relative;}
+    .track-text .text-area{ width: 70%; height: 100%;top:40%; left:55%; transform: translate(-45%, -50%); position: absolute;}
+    .track-text .text-area .text-wrap h3{margin-bottom: 0%;  margin-top: 0%;font-size: 4rem;}
+    .track-text .text-area .text-wrap p:first-of-type{font-size: 1.5rem; margin: 0;}
+    .track-text .text-area .text-wrap p:nth-of-type(2){font-size: 1.2rem;margin-bottom: 1%;  margin-top: 1%; }
+    .track-text .text-area .text-wrap p:nth-of-type(3){font-size: 1.2rem; margin: 0;}
+    .track-text .text-area .text-wrap p:last-of-type{font-size: 1.2rem;margin: 0; margin-top: 5%;margin-bottom: 5%;line-height: 1.5rem;}
+
+    .lyrics-container.active{
+        width: 70%;
+    }
+    .lyrics-area p{
+        width: 70%; 
+    }
+    footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
+    footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
+    footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
+}
+@media screen and (min-width : 651px) and (max-width : 800px){
+    .main-container .bg-section h1{width: 90%; font-size: 4rem;letter-spacing: 2px;
+        top:45%; left:65%; transform: translate(-50%, -50%); 
+     }
+     /* .members-text .text-area{
+        width: 70%;top:0; z-index: 1002;left:40%;transform: translateY(-60%);
+    } */
+    .member-list ul li {font-size: 0.8rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
+    }
+    .members-content .member-instrument img{
+        height: 500px;
+    }
+    footer ul{
+        position: fixed; bottom:2%; left: 5%; width: 50px; margin: 0; padding: 0;
+    }
+    footer ul li{
+        width: 30px; height: 30px; 
+     }
+     footer ul a img{
+        width: 20px;
+     }
+   
+}
+@media screen and (max-width : 650px){
+    header .logo > a > img {width: 40px;}
+    .main-container .bg-section h1{width: 90%; font-size: 3rem;letter-spacing: 2px;
+       top:45%; left:65%; transform: translate(-50%, -50%); 
+    }
+    .bg-musical-images > img:first-of-type{height: 25%; top:-5%; left:25%; transform: rotate(45deg)}
+    .bg-musical-images > img:nth-of-type(2){height: 25%; top:5%; right:25%;transform: rotate(-40deg)}
+    .bg-musical-images > img:nth-of-type(3){height: 30%; top:25%; right:5%; transform: rotate(40deg)}
+    .bg-musical-images > img:nth-of-type(4){height: 25%; top:50%; right:5%;transform: rotate(10deg)}
+    .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:-20%;transform: rotate(10deg)}
+
+}
