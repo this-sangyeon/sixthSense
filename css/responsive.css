@@ -132,7 +132,7 @@
     }
     .members-images{width: 100%; height: 75%;}
     .members-images .members-hover .members-imgs img{
-        transition: 0.3s ease-in-out; top:50%; left:50%; transform: translate(-50%, -40%); width: 60%;
+        transition: 0.3s ease-in-out; top:50%; left:50%; transform: translate(-50%, -40%); width: 50%;
     }
     .members-images .members-hover .members-imgs p{
         display: none;
@@ -255,6 +255,32 @@
     .members-text .text-area p:last-of-type{
         font-size: 2rem; line-height: 2.2rem;
      }
+
+     .album-area{
+        width: 100%; height: 100%; position: absolute;
+        display: flex; flex-direction: column;
+    }
+    .album-area .album-list{
+        width: 100%; height: 20%;  position: relative; 
+    }
+    .album-area .album-list ul{
+        width: 100%; height: 100%;  position: absolute; 
+        display: flex; flex-direction: column; margin: 0; padding: 0; left:15%; top: 30%;
+    }
+    .album-area .album-list li{
+        width: 100%;
+        margin: 0; list-style: none; cursor: pointer;
+    } 
+    .album-area .album-list li p{
+        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0;color:white;
+    } 
+    .album-area .album-list li p.active{
+        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0; color:white;
+    } 
+    .album-content-wrap{
+        width: 100%; height: 80%; position: relative;
+    }
+
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
