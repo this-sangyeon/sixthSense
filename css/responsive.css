@@ -1,4 +1,12 @@
 @media screen  and (max-width : 1300px){
+    /* .album-wrap .album-images .another-images img:first-of-type.active{
+        width: 40%;
+     }
+    .album-wrap .album-images .another-images img:last-of-type.active{
+        width: 50%;  top:110%; 
+     } */
+    .album-wrap .album-images img{top:50%; left: 55%; transform: translate(-50%, -50%); width: 350px;}
+
     .video-area{
         flex-direction: column;
     }
@@ -148,22 +156,23 @@
     }
     .album-wrap {flex-direction: column;}
     .album-wrap .album-images{
-        width: 100%; height: 60%; position: relative;
+        width: 100%; height: 50%; position: relative;
     }
-    .album-wrap .album-text{width: 100%; height: 40%; position: relative; z-index: 1000;}
-
-    .album-wrap .album-images img{width: 45%;top:55%; left: 55%; transform: translate(-50%, -50%);}
+    .album-wrap .album-text{width: 100%; height: 50%; position: relative; z-index: 1000;}
     .album-wrap .album-images .another-images img:first-of-type.active{
         width: 40%;
      }
     .album-wrap .album-images .another-images img:last-of-type.active{
-        width: 40%;
+        width: 50%;  top:110%; 
      }
-    .album-wrap .album-images img{top:55%; left: 55%; transform: translate(-50%, -50%);}
+    .album-wrap .album-images img{top:60%; left: 55%; transform: translate(-50%, -50%); width: 50%;}
 
      .album-wrap .album-text .text-content{
-        width: 70%; height: 45%;
-        top:50%; left:55%; transform: translate(-45%, -50%); position: absolute;
+        width: 70%; height: 60%;
+        top:10%; left:55%; transform: translateX( -50%); position: absolute;
+    }
+    .album-wrap .album-text .text-content h1{
+        font-size:2rem;
     }
     .album-wrap .album-text .text-content p{
         font-size:1rem; font-weight: 100; color:white; line-height: 1.5rem; text-align: justify; padding-right:20px;
@@ -211,6 +220,7 @@
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
+
     .video-area .video-title  .bg-section .main-title h1{
         font-family: 'Red Hat Display', sans-serif;font-weight: 800;font-size: 4rem;letter-spacing: 5px;
         background: url("../img/grad/grad4.gif");background-size: cover; 
@@ -314,6 +324,45 @@
         font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;
         height: 100%;  opacity:1; transition: 0.5s ease-in-out;
     }
+
+    .album-wrap .album-images{
+       height: 40%;
+    }
+    .album-wrap .album-images img{
+        top:40%;    width: 250px;
+    }
+    .album-wrap .album-images .another-images img{
+        width: 150px; 
+     }
+     .album-wrap .album-images .another-images img:first-of-type{
+        position: absolute; transition: 0.3s ease-in-out; top:50%; left: 50%; transform: translate(-50%, -50%);
+      }
+      .album-wrap .album-images .another-images img:last-of-type{
+        position: absolute;transition: 0.3s ease-in-out;top:50%; left: 50%; transform: translate(-50%, -50%);
+      }
+      .album-wrap .album-images .another-images img:first-of-type.active{
+        width: 250px;  top:20%; left: 30%; transform: translate(-50%, -50%) rotate(-25deg); transition: 0.3s ease-in-out; position: absolute;
+      }
+      .album-wrap .album-images .another-images img:last-of-type.active{
+        width: 250px;   top:100%; left: 70%; transform: translate(-50%, -50%) rotate(15deg); transition: 0.3s ease-in-out; position: absolute;
+      }
+      .album-wrap .album-text{
+        width: 100%; height: 60%; position: relative; z-index: 1000;
+    }
+    .album-wrap .album-text .text-content{
+        width: 70%; height: 50%;
+        top:5%; left:55%;transform: translateX(-50%); position: absolute;
+    }
+    .album-wrap .album-text .text-content h1{
+      font-size: 2rem;  line-height: 2.2rem;margin-bottom: 10px;
+    }
+    .album-wrap .album-text .text-content h2{
+      font-size: 1.2rem; 
+    }
+    .album-wrap .album-text .text-content p{
+        font-family: 'Noto Sans KR', sans-serif; width: 95%; height: 100%; overflow-y: scroll; 
+        font-size:0.9rem; font-weight: 100; color:white; line-height: 1.2rem; text-align: justify; padding-right:20px;
+    }
     .track-image{
         width: 100%;height: 40%; position: relative;
     }
@@ -385,33 +434,7 @@
     .members-content .member-instrument{
         display: none;
       }
-      .album-wrap .album-images{
-        width: 100%; height: 50%; position: relative;
-    }
-
-    .album-wrap .album-images .another-images{
-        width: 100%; height: 100%; position: relative;z-index: 1000;
-       }
-      .album-wrap .album-images .another-images img{
-        width: 55%; top:50%; left: 50%; transform: translate(-50%, -50%); position: absolute;
-     }
-     .album-wrap .album-images .another-images img:first-of-type{
-        position: absolute; transition: 0.3s ease-in-out; top:50%; left: 50%; transform: translate(-50%, -50%);
-      }
-      .album-wrap .album-images .another-images img:last-of-type{
-        position: absolute;transition: 0.3s ease-in-out;top:50%; left: 50%; transform: translate(-50%, -50%);
-      }
-      .album-wrap .album-images .another-images img:first-of-type.active{
-         width: 55%; top:20%; left: 30%; transform: translate(-50%, -50%) rotate(-25deg); transition: 0.3s ease-in-out; position: absolute;
-      }
-      .album-wrap .album-images .another-images img:last-of-type.active{
-         width: 70%;  top:80%; left: 70%; transform: translate(-50%, -50%) rotate(15deg); transition: 0.3s ease-in-out; position: absolute;
-      }
-
-
-      .album-wrap .album-text{
-        width: 100%; height: 50%; position: relative; z-index: 1000;
-    }
+    
       .track-image img{
         top:50%; left:50%; transform:translate(-50%, -50%); width: 200px;
      }
