@@ -160,14 +160,7 @@
         width: 40%;
      }
     .album-wrap .album-images img{top:55%; left: 55%; transform: translate(-50%, -50%);}
-    
-    /* .album-wrap .album-images .another-images img:last-of-type{
-        z-index: 1000;
-      } */
-    /* .album-wrap .album-images .another-images img:last-of-type.active{
-        z-index: 1000;
-        width: 60%;  top:80%; left: 70%; transform: translate(-50%, -10%) rotate(10deg); transition: 0.3s ease-in-out; position: absolute;
-     } */
+
      .album-wrap .album-text .text-content{
         width: 70%; height: 45%;
         top:50%; left:55%; transform: translate(-45%, -50%); position: absolute;
@@ -202,6 +195,8 @@
 
 
 @media screen and (min-width : 651px) and (max-width : 900px){
+    .sense-nav ul li a{font-size: 1rem;}
+.sense-nav ul li a.active{font-size: 1rem;}
     .main-container .bg-section h1{width: 90%; font-size: 4rem;letter-spacing: 2px;
         top:45%; left:65%; transform: translate(-50%, -50%); 
      }
@@ -210,13 +205,9 @@
     .members-content .member-instrument img{
         height: 500px;
     }
-    /* .album-wrap .album-images img{width: 45%;}
-    .album-wrap .album-images .another-images img:first-of-type.active{
-        width: 40%;
-     }
-    .album-wrap .album-images .another-images img:last-of-type.active{
-        width: 40%;
-     } */
+    .track-text .text-area .text-wrap p:first-of-type, .track-text .text-area .text-wrap p:nth-of-type(2), .track-text .text-area .text-wrap p:nth-of-type(3),.track-text .text-area .text-wrap p:last-of-type {
+        font-size: 0.9rem; 
+      }
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
@@ -238,6 +229,8 @@
    
 }
 @media screen and (min-width : 550px) and (max-width : 650px){
+    .sense-nav ul li a{font-size: 1rem;}
+    .sense-nav ul li a.active{font-size: 1rem;}
     header .logo > a > img {width: 40px;}
     .main-container .bg-section h1{width: 90%; font-size: 3rem;letter-spacing: 2px;
        top:45%; left:65%; transform: translate(-50%, -50%); 
@@ -248,6 +241,8 @@
     .bg-musical-images > img:nth-of-type(4){height: 25%; top:50%; right:5%;transform: rotate(10deg)}
     .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:-20%;transform: rotate(10deg)}
  
+    .member-list ul li {font-size: 0.8rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
+    }
     .members-images .members-hover .members-imgs p{display: none;}
     .members-content .member-instrument{
       display: none;
@@ -255,31 +250,6 @@
     .members-text .text-area p:last-of-type{
         font-size: 2rem; line-height: 2.2rem;
      }
-
-     .album-area{
-        width: 100%; height: 100%; position: absolute;
-        display: flex; flex-direction: column;
-    }
-    .album-area .album-list{
-        width: 100%; height: 20%;  position: relative; 
-    }
-    .album-area .album-list ul{
-        width: 100%; height: 100%;  position: absolute; 
-        display: flex; flex-direction: column; margin: 0; padding: 0; left:15%; top: 30%;
-    }
-    .album-area .album-list li{
-        width: 100%;
-        margin: 0; list-style: none; cursor: pointer;
-    } 
-    .album-area .album-list li p{
-        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0;color:white;
-    } 
-    .album-area .album-list li p.active{
-        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0; color:white;
-    } 
-    .album-content-wrap{
-        width: 100%; height: 80%; position: relative;
-    }
 
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
@@ -299,6 +269,71 @@
      footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
      footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
      
+}
+@media screen and (max-width : 650px){
+    .sense-nav ul li a{font-size: 1rem;}
+    .sense-nav ul li a.active{font-size: 1rem;}
+    .album-area{
+        width: 100%; height: 100%; position: absolute;
+        display: flex; flex-direction: column;
+    }
+    .album-area .album-list{
+        width: 100%; height: 20%;  position: relative; 
+    }
+    .album-area .album-list ul{
+        width: 100%; height: 100%;  position: absolute; 
+        display: block; flex-direction: column; margin: 0; padding: 0; left:15%; top: 30%;
+    }
+    .album-area .album-list li{
+        width: 100%; height: 20%;
+        margin: 0; list-style: none; cursor: pointer;
+    } 
+    .album-area .album-list li p{
+        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0;color:white;
+    } 
+    .album-area .album-list li p.active{
+        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0; color:white;
+    } 
+    .album-area .album-list ul li .track-list{
+        width: 50%;  
+        font-size: 0.8rem;font-weight: 100;
+    height: 0%;  display: flex; flex-direction: row;
+    }
+    .album-area .album-list ul li .track-list.active{
+        font-family: 'Red Hat Display', sans-serif;font-size: 0.8rem;font-weight: 100;
+        height: 20%;  opacity:1; transition: 0.5s ease-in-out;
+    }
+    .album-area .album-list ul li .track-list >.track-music, .album-area .album-list ul li .track-list >.track-music.active  {
+        margin-bottom: 0%; width: 14%;font-size: 0.8rem; text-align: center;
+    } 
+    .album-content-wrap{
+        width: 100%; height: 80%; position: relative;
+    }
+    .album-area .album-list ul li .track-list.active{
+        width: 100%;  position: absolute;left:0; top:50%;
+        font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;
+        height: 100%;  opacity:1; transition: 0.5s ease-in-out;
+    }
+    .track-image{
+        width: 100%;height: 40%; position: relative;
+    }
+
+    .track-image img{
+        top:50%; left:50%; transform:translate(-50%, -50%); width: 250px;
+     }
+     .track-text{
+        width: 100%;height: 60%; position: relative;
+    }
+     .track-text .text-area {
+        width: 70%;height: 90%; top:0%; left:50%; transform:translateX(-50%); position: absolute;
+    }
+    .track-text .text-area .text-wrap h3{
+       font-size: 2rem; 
+    }
+    .track-text .text-area .text-wrap p:first-of-type, .track-text .text-area .text-wrap p:nth-of-type(2), .track-text .text-area .text-wrap p:nth-of-type(3),.track-text .text-area .text-wrap p:last-of-type {
+      font-size: 0.9rem; 
+    }
+    
 }
 @media screen and (max-width : 549px){
     header .logo > a > img {width: 40px;}
@@ -350,6 +385,36 @@
     .members-content .member-instrument{
         display: none;
       }
+      .album-wrap .album-images{
+        width: 100%; height: 50%; position: relative;
+    }
+
+    .album-wrap .album-images .another-images{
+        width: 100%; height: 100%; position: relative;z-index: 1000;
+       }
+      .album-wrap .album-images .another-images img{
+        width: 55%; top:50%; left: 50%; transform: translate(-50%, -50%); position: absolute;
+     }
+     .album-wrap .album-images .another-images img:first-of-type{
+        position: absolute; transition: 0.3s ease-in-out; top:50%; left: 50%; transform: translate(-50%, -50%);
+      }
+      .album-wrap .album-images .another-images img:last-of-type{
+        position: absolute;transition: 0.3s ease-in-out;top:50%; left: 50%; transform: translate(-50%, -50%);
+      }
+      .album-wrap .album-images .another-images img:first-of-type.active{
+         width: 55%; top:20%; left: 30%; transform: translate(-50%, -50%) rotate(-25deg); transition: 0.3s ease-in-out; position: absolute;
+      }
+      .album-wrap .album-images .another-images img:last-of-type.active{
+         width: 70%;  top:80%; left: 70%; transform: translate(-50%, -50%) rotate(15deg); transition: 0.3s ease-in-out; position: absolute;
+      }
+
+
+      .album-wrap .album-text{
+        width: 100%; height: 50%; position: relative; z-index: 1000;
+    }
+      .track-image img{
+        top:50%; left:50%; transform:translate(-50%, -50%); width: 200px;
+     }
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
@@ -368,3 +433,4 @@
      footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
      footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
 }
+
