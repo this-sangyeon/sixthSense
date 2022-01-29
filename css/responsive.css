@@ -1,10 +1,6 @@
 @media screen  and (max-width : 1550px){
     .video-area .video-title  .bg-section .main-title h1{
-    font-size: 5rem;letter-spacing: 2px;
-      
-      
-        position: absolute; top:65%; left: 60%; transform: translate(-50%, -50%); 
-        z-index: 2000;margin:0; width: 70%;
+    font-size: 5rem;letter-spacing: 2px;position: absolute; top:65%; left: 60%; transform: translate(-50%, -50%); z-index: 2000;margin:0; width: 70%;
     }
     .video-list > ul {
         position: absolute;top:50%; right:-35%;transform:translateY(-50%);
@@ -30,19 +26,16 @@
         position: relative; top:20%; z-index: 2000;
     }
     .arrow-btn-area {
-        margin-top:10%;
+        margin-top:0%;
         width: 100%; height: 50%; position: relative;
    }
    .arrow-btn-area .arrow-btn{
-        width: 20%; height: 30%; position: absolute;
-        display: flex; left: 55%;top:40%;transform: translate(-50%, -50%); 
+        width: 50%; height: 30%; position: absolute;
+        display: flex; left: 55%;top:20%;transform: translate(-50%, -50%); 
     }  
     .video-area .video-title  .bg-section .main-title h1{
-        font-family: 'Red Hat Display', sans-serif;font-weight: 800;font-size: 5.5rem;letter-spacing: 5px;
-        background: url("../img/grad/grad4.gif");background-size: cover; 
-        -webkit-text-fill-color: transparent;-webkit-background-clip: text;pointer-events: none; transition: ease-in 0.5s;
-        position: absolute; top:80%; left: 55%; transform: translate(-50%, -50%); 
-        z-index: 2000;margin:0; width: 70%; line-height: 6rem;
+        font-size: 5rem;letter-spacing: 5px;transition: ease-in 0.5s;
+       top:50%; left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 6rem; text-align: center;
     }
     .video-list{
         display: none;
@@ -119,14 +112,6 @@
         width: 100%; height: 100%; display: flex; flex-direction: column;
         position: relative; top:20%; z-index: 2000;
     }
-    .arrow-btn-area {
-        margin-top:10%;
-        width: 100%; height: 50%; position: relative;
-   }
-   .arrow-btn-area .arrow-btn{
-        width: 30%; height: 30%; position: absolute;
-        display: flex; left: 55%;top:40%;transform: translate(-50%, -50%); 
-    }   
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
@@ -205,7 +190,7 @@
         width: 70%; 
     }
     .video-area .video-title  .bg-section .main-title h1{
-        font-size: 4rem;letter-spacing: 5px;top:80%; left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 4rem;
+        font-size: 4rem;letter-spacing: 5px;top:60%; left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 4rem;
       }
     footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
     footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
@@ -230,11 +215,14 @@
     }
 
     .video-area .video-title  .bg-section .main-title h1{
-      font-size: 4rem;letter-spacing: 5px;top:80%; left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 4rem;
+      font-size: 4rem;letter-spacing: 5px;top:60%;  left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 4rem;
     }
-
+    .arrow-btn-area .arrow-btn{
+        width: 50%; height: 30%; position: absolute;
+        display: flex; left: 55%;top:20%;transform: translate(-50%, -20%); 
+    } 
     .video-respon-wrap > video{
-        height: auto; width: 600px;
+        height: auto; width: 550px;
          
      }
      footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
@@ -268,10 +256,10 @@
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
-    .video-area .video-title  .bg-section .main-title h1{
-       font-size: 5.5rem;top:80%; left: 55%; transform: translate(-50%, -50%); 
+    /* .video-area .video-title  .bg-section .main-title h1{
+       font-size: 5.5rem;top:55%; left: 55%; transform: translate(-50%, -50%); 
         z-index: 2000;margin:0; width: 60%; line-height: 6rem;
-    }
+    } */
      footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
      footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
      footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
@@ -380,8 +368,12 @@
     .track-text .text-area .text-wrap p:first-of-type, .track-text .text-area .text-wrap p:nth-of-type(2), .track-text .text-area .text-wrap p:nth-of-type(3),.track-text .text-area .text-wrap p:last-of-type {
       font-size: 0.9rem; 
     }
+    .video-area .video-title .title div p{
+        position: absolute; margin: 0;text-transform: uppercase; top:40%; margin: 0;left: 50%;
+        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;
+     }
     .video-area .video-title  .bg-section .main-title h1{
-        font-size: 3rem;top:80%; left: 55%; transform: translate(-50%, -50%); 
+        font-size: 3rem;top:60%; left: 55%; transform: translate(-50%, -50%); 
          z-index: 2000;margin:0; width: 70%; line-height: 3rem; letter-spacing: 2px;
      }
      .video-decoration{ width: 400px; height: 400px; }
@@ -446,10 +438,19 @@
     .video-area .video-content{
         width: 100%; height: 60%; position: relative;
     }
-    
+    /* .video-area .video-title .title div p{
+        position: absolute; margin: 0;text-transform: uppercase; top:40%; margin: 0;left: 50%;
+        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;
+     } */
+    .video-area .video-title{
+        width: 100%; height: 50%;  position: relative; display: flex; 
+    }
+    .video-area .video-content{
+        width: 100%; height: 50%; position: relative;
+    }
     .video-area .video-title  .bg-section .main-title h1{
-        font-size: 2rem;top:80%; left: 55%; transform: translate(-50%, -50%); 
-         z-index: 2000;margin:0; width: 70%; line-height: 3rem; letter-spacing: 2px;
+        font-size: 3.5rem;top:60%; left: 55%; transform: translate(-50%, -50%); 
+         z-index: 2000;margin:0; width: 80%; line-height: 4rem; letter-spacing: 2px; text-align: left;
      }
     .video-respon-wrap > video{
         height: auto; width: 350px; 
@@ -459,3 +460,9 @@
      footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
 }
 
+@media screen and (max-width : 400px){
+    .video-area .video-title  .bg-section .main-title h1{
+        font-size: 3rem;top:60%; left: 55%; transform: translate(-50%, -50%); 
+         z-index: 2000;margin:0; width: 80%; line-height: 4rem; letter-spacing: 2px; text-align: left;
+     }
+}

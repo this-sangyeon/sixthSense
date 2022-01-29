@@ -3,6 +3,7 @@ const section = document.querySelectorAll('section');
 const transitionBox = document.querySelector('.transitionbox');
 senseNavList = Array.prototype.slice.call(senseNavList);
 
+
 for(let i = 0; i < senseNavList.length; i++){
     senseNavList[i].addEventListener('click',(e)=>{
         let target = e.currentTarget;
@@ -15,6 +16,7 @@ for(let i = 0; i < senseNavList.length; i++){
         section[i].classList.add('active');
         senseNavList[i].classList.add('active');
         lyricsBtnClose();
+        
         if(naveListIndex === 0){
             console.log('click1');
             transitionBox.style.width ="0%";
@@ -58,7 +60,7 @@ for(let i = 0; i < senseNavList.length; i++){
             transitionBox.style.transition ="ease-in 0.2s";
 
             if(isClick === false){
-               const zero = 0;
+            const zero = 0;
                 trackTitle.innerText =trackArrayInfo[zero].title;
                 trackNumber.innerText = trackArrayInfo[zero].num;
                 trackNumText.innerText = trackArrayInfo[zero].trackNum;
@@ -84,4 +86,42 @@ for(let i = 0; i < senseNavList.length; i++){
             transitionBox.style.transition ="ease-in 0.2s";
         }
     })
+    window.addEventListener('resize',()=>{
+        if(matchMedia("screen and (min-width : 651px)").matches){
+            if(naveListIndex === 2){
+                transitionBox.style.width ="70%";
+                transitionBox.style.height ="100%";
+                transitionBox.style.background ="#FF971E";
+                transitionBox.style.bottom ="0%";
+                transitionBox.style.right ="0%";
+                transitionBox.style.transition ="ease-in 0.2s";
+            }
+        }
+        else if(matchMedia("screen and (max-width : 650px)").matches){
+            if(naveListIndex === 2){
+                transitionBox.style.width ="100%";
+                transitionBox.style.height ="70%";
+                transitionBox.style.background ="#FF971E";
+                transitionBox.style.bottom ="0%";
+                transitionBox.style.right ="0%";
+                transitionBox.style.transition ="ease-in 0.2s";
+            }
+        }
+    })
 }
+
+
+// window.addEventListener('resize',()=>{
+//     if(senseNavList === 2){
+//         console.log('/sdf');
+//     }
+// })
+
+
+
+       
+
+
+
+
+
