@@ -34,7 +34,7 @@ let videoLink =[
 let videoListLength = videoLink.length;
 
 prevBtn.addEventListener('click', ()=>{
-    if(matchMedia("screen and (max-width : 1920px) and (max-height: 1080px)").matches){
+    if(matchMedia("screen and (max-width : 1920px)").matches){
         count--; 
         console.log(count);
         videoListEl.style.transform = `rotate( ${72 * count * -1}deg)`;
@@ -62,7 +62,7 @@ prevBtn.addEventListener('click', ()=>{
             }
         }
     }
-    else if(matchMedia("screen and (max-width : 1024px) and (max-height: 1366px)").matches){
+    else if(matchMedia("screen and (max-width : 1300px)").matches){
         console.log('prevclick');
         videoListIndex = videoListIndex - 1;
         videoListIndex < 0 && (videoListIndex = videoListLength - 1);
@@ -77,7 +77,7 @@ prevBtn.addEventListener('click', ()=>{
     }
 })
 nextBtn.addEventListener('click', ()=>{
-    if(matchMedia("screen and (max-width : 1920px) and (max-height: 1080px)").matches){
+    if(matchMedia("screen and (min-width : 1301px) and (max-width : 1920px)").matches){
         count++;
         console.log(count);
         videoListEl.style.transform = `rotate( ${72 * count * -1}deg)`; 
@@ -101,7 +101,7 @@ nextBtn.addEventListener('click', ()=>{
             }
         } 
     }
-    else if(matchMedia("screen and (max-width : 1024px) and (max-height: 1366px)").matches){
+    else if(matchMedia("screen and (max-width : 1300px)").matches){
         console.log('prevclick');
         videoListIndex = videoListIndex + 1;
         videoListIndex > videoListLength - 1 && (videoListIndex = 0);
