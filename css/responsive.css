@@ -1,178 +1,83 @@
 @media screen  and (max-width : 1550px){
-    .video-area .video-title  .bg-section .main-title h1{
-    font-size: 5rem;letter-spacing: 2px;position: absolute; top:65%; left: 60%; transform: translate(-50%, -50%); z-index: 2000;margin:0; width: 70%;
-    }
-    .video-list > ul {
-        position: absolute;top:50%; right:-35%;transform:translateY(-50%);
-    }
+    .video-area .video-title  .bg-section .main-title h1{font-size: 5rem;letter-spacing: 2px;top:65%; left: 60%; width: 70%;}
+    .video-list > ul {position: absolute;top:50%; right:-35%;}
 }
 @media screen  and (max-width : 1300px){
-    .album-wrap .album-images img{top:50%; left: 55%; transform: translate(-50%, -50%); width: 350px;}
-
-    .video-area{
-        flex-direction: column;
-    }
-    .video-area .video-title{
-        width: 100%; height: 40%;  position: relative; display: flex; 
-    }
-    .video-area .video-title .title {
-        width: 20%;height: 45%; position: absolute;
-    }
-    .video-list > ul {
-        position: relative;top:10%; left:20%;transform:translateY(-50%,-50%);
-    }
-    .video-area .video-title  .bg-section{
-        width: 100%; height: 100%; display: flex; flex-direction: column;
-        position: relative; top:20%; z-index: 2000;
-    }
-    .arrow-btn-area {
-        margin-top:0%;
-        width: 100%; height: 50%; position: relative;
-   }
-   .arrow-btn-area .arrow-btn{
-        width: 50%; height: 30%; position: absolute;
-        display: flex; left: 55%;top:20%;transform: translate(-50%, -50%); 
-    }  
+    .album-wrap .album-images img{width: 350px;}
+    .video-area{flex-direction: column;}
+    .video-area .video-title{ width: 100%; height: 40%;  display: flex; }
+    .video-area .video-title .title {width: 20%;height: 45%; position: absolute;}
+    .video-list > ul {top:10%; left:20%;}
+    .video-area .video-title  .bg-section{ position: relative; top:20%; z-index: 2000;}
+    .arrow-btn-area {width: 100%; height: 50%; position: relative;}
+    .arrow-btn-area .arrow-btn{width: 50%; height: 30%;left: 55%;}  
     .video-area .video-title  .bg-section .main-title h1{
-        font-size: 5rem;letter-spacing: 5px;transition: ease-in 0.5s;
-       top:50%; left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 6rem; text-align: center;
+        font-size: 5rem;letter-spacing: 5px;top:50%; left: 55%; width: 60%; line-height: 6rem; text-align: center;
     }
-    .video-list{
-        display: none;
-    }
+    .video-list{display: none;}
     .video-list > ul li {
-        transform-origin:none; list-style: none;
-        top: 50%;right:30%; transform: translate(-50%, -50%);position: absolute; 
+        transform-origin:none; list-style: none;top: 50%;right:30%; transform: translate(-50%, -50%);position: absolute; 
         opacity: 0; visibility: hidden; transition: 0.3s ease-in-out;
     }
-    .video-decoration{ width: 550px; height: 550px;  position: fixed; border-radius: 50%; transform:translateY(-50%) scale(1.2);
-        position: absolute; background: url("../img/grad/grad4.gif"); top:40%;right:0%; background-repeat: no-repeat;}
+    .video-decoration{top:40%;}
     .video-list > ul li:first-of-type{transform:rotate(0deg);}
     .video-list > ul li:nth-of-type(2){transform:rotate(0deg);}
     .video-list > ul li:nth-of-type(3){transform:rotate(0deg);}
     .video-list > ul li:nth-of-type(4){transform:rotate(0deg);}
     .video-list > ul li:last-of-type{transform:rotate(0deg);}
-    .video-list > ul li > video{outline: none; border-radius: 20px; }
-    .video-list > ul li >.video-text{
-        position: absolute; margin-top:10px; font-family: 'Red Hat Display', sans-serif; 
-        font-size: 2rem;font-weight: 800;color: #ffffff;
-    } 
-      
-    .video-list > ul li.active{
-        opacity: 1; visibility: visible; transition: 0.3s ease-in-out;
-    }
-    .video-respon-list{
-        display: block; width: 100%; height: 100%; position: relative;
-    }
-    .video-respon-wrap{
-         position: absolute; top: 50%;left:55%; transform: translate(-50%, -50%);
-        
-    }
-    .video-respon-wrap > video{
-      height: 400px; width: 700px;
-       
-   }
-    .video-respon-wrap .video-text > p{
-        font-family: 'Red Hat Display', sans-serif; 
-        font-size: 2rem;font-weight: 800;color: #ffffff;
-    }
-    footer ul{
-        position: fixed; bottom:2%; left: 5%; width: 50px; margin: 0; padding: 0;
-    }
-    footer ul li{
-        width: 30px; height: 30px; 
-     }
-     footer ul a img{
-        width: 20px;
-     }
+    .video-list > ul li > video{outline: none; border-radius: 20px;}
+    .video-list > ul li >.video-text{margin-top:10px;font-size: 2rem;} 
+    .video-list > ul li.active{opacity: 1; visibility: visible; transition: 0.3s ease-in-out;}
+    .video-respon-list{display: block; width: 100%; height: 100%; position: relative;}
+    .video-respon-wrap{position: absolute; top: 50%;left:55%; transform: translate(-50%, -50%);}
+    .video-respon-wrap > video{height: auto; width: 700px; transition: 0.3s ease-in-out;}
+    .video-respon-wrap .video-text > p{font-family: 'Red Hat Display', sans-serif; font-size: 2rem;font-weight: 800;color: #ffffff;}
+    footer ul{position: fixed; bottom:2%; left: 5%; width: 50px; margin: 0; padding: 0;}
+    footer ul li{width: 30px; height: 30px; }
+    footer ul a img{ width: 20px;}
 }
-
-
 @media screen and (min-width : 901px) and (max-width : 1300px){
-
-    .members-text .text-area{
-        width: 70%;
-    }
-    .members-images .members-hover .members-imgs p{
-       display: none;
-    }
-    .video-area{
-        flex-direction: column;
-    }
-    .video-area .video-title{
-        width: 100%; height: 40%;  position: relative; display: flex; 
-    }
-    .video-area .video-title .title {
-        width: 20%;height: 45%; position: absolute;
-    }
-    .video-list > ul {
-        position: relative;top:10%; left:20%;transform:translateY(-50%,-50%);
-    }
+    .members-text .text-area{width: 70%;}
+    .members-images .members-hover .members-imgs p{display: none;}
+    .video-area{flex-direction: column;}
+    .video-area .video-title{width: 100%; height: 40%;  position: relative; display: flex; }
+    .video-area .video-title .title {width: 20%;height: 45%; position: absolute;}
+    .video-list > ul {position: relative;top:10%; left:20%;transform:translateY(-50%,-50%);}
     .video-area .video-title  .bg-section{
-        width: 100%; height: 100%; display: flex; flex-direction: column;
-        position: relative; top:20%; z-index: 2000;
+        width: 100%; height: 100%; display: flex; flex-direction: column;position: relative; top:20%; z-index: 2000;
     }
-    .video-area .video-content{
-        width: 100%; height: 60%; position: relative;
-    }
+    .video-area .video-content{width: 100%; height: 60%; position: relative;}
 }
-
 @media screen  and (max-width : 1024px){
     .main-container .bg-section{width: 100%;}
-    /* .main-container .bg-section h1{width: 70%;} */
     .bg-musical-images > img:first-of-type{height: 25%; top:0%; left:30%; transform: rotate(45deg)}
     .bg-musical-images > img:nth-of-type(4){height: 25%; top:60%; right:10%;transform: rotate(40deg)}
     .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:5%;transform: rotate(-10deg)}
-
     .circle-container{display: none;}
-    .members-content{
-        width: 80%; height: 100%; position: relative; display: flex;  flex-direction: column;
+    .members-content{flex-direction: column;
     }
-    .member-list ul li {font-size: 1rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
-    }
+    .member-list ul li {width: 100%; }
     .members-images{width: 100%; height: 75%;}
-    .members-images .members-hover .members-imgs img{
-        transition: 0.3s ease-in-out; top:50%; left:50%; transform: translate(-50%, -40%); width: 50%;
-    }
-    .members-images .members-hover .members-imgs p{
-        display: none;
-     }
+    .members-images .members-hover .members-imgs img{width: 50%;}
+    .members-images .members-hover .members-imgs p{display: none;}
     .members-images .members-hover .members-imgs img:first-of-type.active{transform: translate(-50%, -40%) rotate(-0deg);}
     .members-images .members-hover .members-imgs img:last-of-type{display: none;}
     .members-text{width: 100%; height: 25%;  position: relative;}
-    .members-text .text-area{
-        width: 50%;top:0; z-index: 1002;left:40%;transform: translateY(-60%);
-    }
-    .members-content .member-instrument{
-        position: absolute;top:50%; left:15%; transform: translate(-50%, -20%) rotate(-25deg); position: absolute; opacity: 0.5;
-    }
+    .members-text .text-area{width: 50%;top:0; z-index: 1002;left:40%;transform: translateY(-60%);}
+    .members-content .member-instrument{left:15%; transform: translate(-50%, -20%) rotate(-25deg);}
     .album-wrap {flex-direction: column;}
-    .album-wrap .album-images{
-        width: 100%; height: 50%; position: relative;
-    }
-    .album-wrap .album-text{width: 100%; height: 50%; position: relative; z-index: 1000;}
-    .album-wrap .album-images .another-images img:first-of-type.active{
-        width: 40%;
-     }
-    .album-wrap .album-images .another-images img:last-of-type.active{
-        width: 50%;  top:110%; 
-     }
+    .album-wrap .album-images{width: 100%; height: 50%;}
+    .album-wrap .album-text{width: 100%; height: 50%; z-index: 1000;}
+    .album-wrap .album-images .another-images img:first-of-type.active{width: 40%;}
+    .album-wrap .album-images .another-images img:last-of-type.active{width: 50%;  top:110%; }
     .album-wrap .album-images img{top:60%; left: 55%; transform: translate(-50%, -50%); width: 50%;}
-
-     .album-wrap .album-text .text-content{
-        width: 70%; height: 60%;
-        top:10%; left:55%; transform: translateX( -50%); position: absolute;
-    }
-    .album-wrap .album-text .text-content h1{
-        font-size:2rem;
-    }
-    .album-wrap .album-text .text-content p{
-        font-size:1rem; font-weight: 100; color:white; line-height: 1.5rem; text-align: justify; padding-right:20px;
-    }
-    .track-image p{font-size: 13rem; top:85%; left:78%; color:#ff5900;}
+    .album-wrap .album-text .text-content{ width: 70%; height: 60%;top:10%; left:55%; transform: translateX( -50%); position: absolute;}
+    .album-wrap .album-text .text-content h1{font-size:2rem;}
+    .album-wrap .album-text .text-content p{font-size:1rem;}
     .track-container{flex-direction: column;}
     .track-image{width: 100%; height: 60%; position: relative;}
     .track-image img{top:55%; left: 55%; transform: translate(-50%, -50%);}
+    .track-image p{font-size: 13rem; top:85%; left:78%; color:#ff5900;}
     .sub-btn-area{bottom:5%; flex-direction: row; width: 100%; height: 10%;}
     .sub-btn-area button{margin-left:2px;margin-right:2px;}
     .track-text{width: 100%; height: 40%; position: relative;}
@@ -182,204 +87,108 @@
     .track-text .text-area .text-wrap p:nth-of-type(2){font-size: 1.2rem;margin-bottom: 1%;  margin-top: 1%; }
     .track-text .text-area .text-wrap p:nth-of-type(3){font-size: 1.2rem; margin: 0;}
     .track-text .text-area .text-wrap p:last-of-type{font-size: 1.2rem;margin: 0; margin-top: 5%;margin-bottom: 5%;line-height: 1.5rem;}
-
-    .lyrics-container.active{
-        width: 70%;
-    }
-    .lyrics-area p{
-        width: 70%; 
-    }
+    .lyrics-container.active, .lyrics-area p{width: 70%;}
     .video-area .video-title  .bg-section .main-title h1{
         font-size: 4rem;letter-spacing: 5px;top:60%; left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 4rem;
-      }
+    }
     footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
     footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
     footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
 }
 
-
 @media screen and (min-width : 651px) and (max-width : 900px){
     .sense-nav ul li a{font-size: 1rem;}
-.sense-nav ul li a.active{font-size: 1rem;}
-.main-container .bg-section h1{width: 90%; font-size: 5rem;letter-spacing: 2px;}
-    .member-list ul li {font-size: 0.8rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
-    }
-    .members-content .member-instrument img{
-        height: 500px;
-    }
+    .sense-nav ul li a.active{font-size: 1rem;}
+    .main-container .bg-section h1{width: 90%; font-size: 5rem;letter-spacing: 2px;}
+    .member-list ul li {font-size: 0.8rem;width: 100%; }
+    .members-content .member-instrument img{height: 500px;}
     .track-text .text-area .text-wrap p:first-of-type, .track-text .text-area .text-wrap p:nth-of-type(2), .track-text .text-area .text-wrap p:nth-of-type(3),.track-text .text-area .text-wrap p:last-of-type {
         font-size: 0.9rem; 
-      }
-    .video-area .video-content{
-        width: 100%; height: 60%; position: relative;
     }
-
-    .video-area .video-title  .bg-section .main-title h1{
-      font-size: 4rem;letter-spacing: 5px;top:60%;  left: 55%; transform: translate(-50%, -50%); width: 60%; line-height: 4rem;
-    }
-    .arrow-btn-area .arrow-btn{
-        width: 50%; height: 30%; position: absolute;
-        display: flex; left: 55%;top:20%;transform: translate(-50%, -20%); 
-    } 
-    .video-respon-wrap > video{
-        height: auto; width: 550px;
-         
-     }
+    .video-area .video-content{width: 100%; height: 60%; position: relative;}
+    .video-area .video-title  .bg-section .main-title h1{font-size: 4rem;letter-spacing: 5px;top:60%; left: 55%; width: 60%; line-height: 4rem;}
+    .arrow-btn-area .arrow-btn{width: 50%; height: 30%;left: 55%;transform: translate(-50%, -20%);} 
+    .video-respon-wrap > video{height: auto; width: 550px; transition: 0.3s ease-in-out;}
      footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
      footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
      footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
-   
 }
 @media screen and (min-width : 550px) and (max-width : 650px){
     .sense-nav ul li a{font-size: 1rem;}
     .sense-nav ul li a.active{font-size: 1rem;}
     header .logo > a > img {width: 40px;}
-    .main-container .bg-section h1{width: 90%; font-size: 3rem;letter-spacing: 2px;
-       top:45%; left:65%; transform: translate(-50%, -50%); 
-    }
+    .main-container .bg-section h1{width: 90%; font-size: 3rem;letter-spacing: 2px;top:45%; left:65%; transform: translate(-50%, -50%);}
     .bg-musical-images > img:first-of-type{height: 25%; top:-5%; left:25%; transform: rotate(45deg)}
     .bg-musical-images > img:nth-of-type(2){height: 25%; top:5%; right:25%;transform: rotate(-40deg)}
     .bg-musical-images > img:nth-of-type(3){height: 30%; top:25%; right:5%; transform: rotate(40deg)}
     .bg-musical-images > img:nth-of-type(4){height: 25%; top:50%; right:5%;transform: rotate(10deg)}
     .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:-20%;transform: rotate(10deg)}
- 
-    .member-list ul li {font-size: 0.8rem;font-weight: 100;text-transform: uppercase; color:rgba(255, 255, 255, 0.452); width: 100%; 
-    }
+    .member-list ul li {font-size: 0.8rem; width: 100%; }
     .members-images .members-hover .members-imgs p{display: none;}
-    .members-content .member-instrument{
-      display: none;
-    }
-    .members-text .text-area p:last-of-type{
-        font-size: 2rem; line-height: 2.2rem;
-     }
-
-    .video-area .video-content{
-        width: 100%; height: 60%; position: relative;
-    }
-    /* .video-area .video-title  .bg-section .main-title h1{
-       font-size: 5.5rem;top:55%; left: 55%; transform: translate(-50%, -50%); 
-        z-index: 2000;margin:0; width: 60%; line-height: 6rem;
-    } */
-     footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
-     footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: #FF961E;letter-spacing: 1px; margin: 0;}
-     footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: #FF961E;letter-spacing: 1px; margin: 0;}
-     
+    .members-content .member-instrument{display: none;}
+    .members-text .text-area p:last-of-type{font-size: 2rem; line-height: 2.2rem;}
+    .video-area .video-content{width: 100%; height: 60%; position: relative;}
 }
 @media screen and (max-width : 650px){
     .sense-nav ul li a{font-size: 1rem;}
     .sense-nav ul li a.active{font-size: 1rem;}
     .main-container .bg-section h1{width: 90%; font-size: 5rem;letter-spacing: 2px;}
-    .album-area{
-        width: 100%; height: 100%; position: absolute;
-        display: flex; flex-direction: column;
-    }
-    .album-area .album-list{
-        width: 100%; height: 20%;  position: relative; 
-    }
-    .album-area .album-list ul{
-        width: 100%; height: 100%;  position: absolute; 
-        display: block; flex-direction: column; margin: 0; padding: 0; left:15%; top: 30%;
-    }
-    .album-area .album-list li{
-        width: 100%; height: 20%;
-        margin: 0; list-style: none; cursor: pointer;
-    } 
-    .album-area .album-list li p{
-        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0;color:white;
-    } 
-    .album-area .album-list li p.active{
-        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;text-transform: uppercase; margin: 0; color:white;
-    } 
-    .album-area .album-list ul li .track-list{
-        width: 50%;  
-        font-size: 0.8rem;font-weight: 100;
-    height: 0%;  display: flex; flex-direction: row;
-    }
-    .album-area .album-list ul li .track-list.active{
-        font-family: 'Red Hat Display', sans-serif;font-size: 0.8rem;font-weight: 100;
-        height: 20%;  opacity:1; transition: 0.5s ease-in-out;
-    }
+    .album-area{width: 100%; height: 100%; position: absolute;display: flex; flex-direction: column;}
+    .album-area .album-list{width: 100%; height: 20%;  position: relative;}
+    .album-area .album-list ul{width: 100%; height: 100%;display: block; flex-direction: column;  left:15%; top: 30%;}
+    .album-area .album-list li{width: 100%; height: 20%;margin: 0; list-style: none; cursor: pointer;} 
+    .album-area .album-list li p,  .album-area .album-list li p.active{font-size: 1.5rem;} 
+    .album-area .album-list ul li .track-list{width: 50%; font-size: 0.8rem;font-weight: 100;height: 0%;  display: flex; flex-direction: row;}
+    .album-area .album-list ul li .track-list.active{font-size: 0.8rem;font-weight: 100;height: 20%;  opacity:1; transition: 0.5s ease-in-out;}
     .album-area .album-list ul li .track-list >.track-music, .album-area .album-list ul li .track-list >.track-music.active  {
-        margin-bottom: 0%; width: 14%;font-size: 0.8rem; text-align: center;
+        margin-bottom: 0%; width: 15%;font-size: 0.8rem; text-align: center;
     } 
-    .album-content-wrap{
-        width: 100%; height: 80%; position: relative;
-    }
+    .album-content-wrap{width: 100%; height: 80%; position: relative;}
     .album-area .album-list ul li .track-list.active{
-        width: 100%;  position: absolute;left:0; top:50%;
-        font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;
+        width: 100%;  position: absolute;left:-10%; top:50%;font-family: 'Red Hat Display', sans-serif;font-size: 1rem;font-weight: 100;
         height: 100%;  opacity:1; transition: 0.5s ease-in-out;
     }
-
-    .album-wrap .album-images{
-       height: 40%;
+    .album-wrap .album-images{height: 40%;}
+    .album-wrap .album-images img{top:40%; width: 250px;}
+    .album-wrap .album-images .another-images img{width: 150px; }
+    .album-wrap .album-images .another-images img:first-of-type.active{
+        width: 250px;  top:10%; left: 30%; transform: translate(-50%, -50%) rotate(-25deg); 
     }
-    .album-wrap .album-images img{
-        top:40%;    width: 250px;
+    .album-wrap .album-images .another-images img:last-of-type.active{
+        width: 250px; top:100%; left: 70%; transform: translate(-50%, -50%) rotate(15deg); 
     }
-    .album-wrap .album-images .another-images img{
-        width: 150px; 
-     }
-     .album-wrap .album-images .another-images img:first-of-type{
-        position: absolute; transition: 0.3s ease-in-out; top:50%; left: 50%; transform: translate(-50%, -50%);
-      }
-      .album-wrap .album-images .another-images img:last-of-type{
-        position: absolute;transition: 0.3s ease-in-out;top:50%; left: 50%; transform: translate(-50%, -50%);
-      }
-      .album-wrap .album-images .another-images img:first-of-type.active{
-        width: 250px;  top:20%; left: 30%; transform: translate(-50%, -50%) rotate(-25deg); transition: 0.3s ease-in-out; position: absolute;
-      }
-      .album-wrap .album-images .another-images img:last-of-type.active{
-        width: 250px;   top:100%; left: 70%; transform: translate(-50%, -50%) rotate(15deg); transition: 0.3s ease-in-out; position: absolute;
-      }
-      .album-wrap .album-text{
-        width: 100%; height: 60%; position: relative; z-index: 1000;
-    }
-    .album-wrap .album-text .text-content{
-        width: 70%; height: 50%;
-        top:5%; left:55%;transform: translateX(-50%); position: absolute;
-    }
-    .album-wrap .album-text .text-content h1{
-      font-size: 2rem;  line-height: 2.2rem;margin-bottom: 10px;
-    }
-    .album-wrap .album-text .text-content h2{
-      font-size: 1.2rem; 
-    }
-    .album-wrap .album-text .text-content p{
-        font-family: 'Noto Sans KR', sans-serif; width: 95%; height: 100%; overflow-y: scroll; 
-        font-size:0.9rem; font-weight: 100; color:white; line-height: 1.2rem; text-align: justify; padding-right:20px;
-    }
-    .track-image{
-        width: 100%;height: 40%; position: relative;
-    }
-
-    .track-image img{
-        top:50%; left:50%; transform:translate(-50%, -50%); width: 250px;
-     }
-     .track-text{
-        width: 100%;height: 60%; position: relative;
-    }
-     .track-text .text-area {
-        width: 70%;height: 90%; top:0%; left:50%; transform:translateX(-50%); position: absolute;
-    }
-    .track-text .text-area .text-wrap h3{
-       font-size: 2rem; 
-    }
+    .album-wrap .album-text{width: 100%; height: 60%; z-index: 1000;}
+    .album-wrap .album-text .text-content{width: 80%; height: 50%; top:5%; left:50%;transform: translateX(-50%); position: absolute;}
+    .album-wrap .album-text .text-content h1{font-size: 2rem;  line-height: 2.2rem;margin-bottom: 10px;}
+    .album-wrap .album-text .text-content h2{font-size: 1.2rem;}
+    .album-wrap .album-text .text-content p{width: 95%; height: 100%; overflow-y: scroll; font-size:0.9rem; line-height: 1.2rem; padding-right:20px;}
+    .track-image{width: 100%;height: 40%; position: relative;}
+    .track-image img{top:50%; left:50%; transform:translate(-50%, -50%); width: 250px;}
+    .track-text{ width: 100%;height: 60%; position: relative;}
+    .track-text .text-area {width: 80%;height: 90%; top:0%; left:50%; transform:translateX(-50%); position: absolute;}
+    .track-text .text-area .text-wrap h3{font-size: 2rem;}
     .track-text .text-area .text-wrap p:first-of-type, .track-text .text-area .text-wrap p:nth-of-type(2), .track-text .text-area .text-wrap p:nth-of-type(3),.track-text .text-area .text-wrap p:last-of-type {
       font-size: 0.9rem; 
     }
-    .video-area .video-title .title div p{
-        position: absolute; margin: 0;text-transform: uppercase; top:40%; margin: 0;left: 50%;
-        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;
-     }
+    .lyrics-container.active{
+        position: absolute; top:50%; right:10%; transform:translateY(-50%); z-index: 5000;
+        width: 80%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px;transition: 0.3s ease-in-out;
+    }
+    .lyrics-close-btn button{
+       background:#EB2814;
+    }
+    .video-area .video-title .title div p{margin: 0;top:40%;left: 50%;font-size: 1.5rem;}
     .video-area .video-title  .bg-section .main-title h1{
         font-size: 3rem;top:60%; left: 55%; transform: translate(-50%, -50%); 
-         z-index: 2000;margin:0; width: 70%; line-height: 3rem; letter-spacing: 2px;
-     }
+        z-index: 2000;margin:0; width: 70%; line-height: 3rem; letter-spacing: 2px;
+     } 
+     .arrow-btn-area .arrow-btn{width: 50%; height: 30%;left: 50%;transform: translate(-50%, -20%);} 
      .video-decoration{ width: 400px; height: 400px; }
-     .video-respon-wrap > video{
-        height: auto; width: 500px; 
-     }
+     .video-respon-wrap{left:50%;}
+     .video-respon-wrap > video{height: auto; width: 500px; transition: 0.3s ease-in-out;}
+    footer > .footer-sign{position: fixed; bottom:2%; right: 3%; text-align: right; font-family: 'Red Hat Display', sans-serif;} 
+    footer > .footer-sign p:first-of-type{font-size: 1rem;font-weight: 800;color: white;letter-spacing: 1px; margin: 0;}
+    footer > .footer-sign p:last-of-type{font-size: 0.7rem;font-weight: 100;color: white;letter-spacing: 1px; margin: 0;}
 }
 @media screen and (max-width : 549px){
     header .logo > a > img {width: 40px;}
@@ -392,25 +201,14 @@
     .bg-musical-images > img:nth-of-type(4){height: 25%; top:50%; right:5%;transform: rotate(10deg)}
     .bg-musical-images > img:last-of-type{height: 25%; bottom:5%; left:-20%;transform: rotate(10deg)}
 
-    .member-area{
-        width: 100%; height: 100%; display: flex;flex-direction: column;
-    }
-    .member-list {
-        width: 100%; height: 20%;
-         display: flex; flex-direction: column;
-    }
-    .member-list .member-title{
-        width: 100%;height: 80%; position: relative ;  top:0
-    }
+    .member-area{width: 100%; height: 100%; display: flex;flex-direction: column;}
+    .member-list {width: 100%; height: 20%;display: flex; flex-direction: column;}
+    .member-list .member-title{width: 100%;height: 80%; position: relative ;  top:0}
     .member-list .member-title p{
         position: absolute;font-family: 'Red Hat Display', sans-serif;font-size: 2rem;font-weight: 800;text-transform: uppercase; bottom:0%; margin: 0;left: 50%;transform: translateX(-50%);
     }
-    .member-list .list{
-        width: 100%;height: 20%; position: relative ; top:0;
-    }
-    .members-content{
-        width: 100%; height: 80%; position: relative; display: flex;  flex-direction: column;
-    }
+    .member-list .list{width: 100%;height: 20%; position: relative ; top:0;}
+    .members-content{width: 100%; height: 80%; position: relative; display: flex;  flex-direction: column;}
     .member-list ul {
         position: absolute;left: 50%; margin: 0; padding:0;z-index: 2000; display: flex; width: 80%;transform: translateX(-50%);
    }
@@ -419,38 +217,18 @@
         transition: 0.3s ease-in-out; top:40%; left:50%; transform: translate(-50%, -40%); width: 250px;
     }
     .members-images .members-hover .members-imgs p{display: none;}
-    .members-text .text-area{
-        width: 50%; z-index: 1002;left:35%;transform: translateY(-60%); 
-    }
-    .members-text .text-area h1{
-        font-size: 2rem; 
-    }
-    .members-text .text-area p:last-of-type{
-       font-size: 2rem; line-height: 2.2rem;
-    }
-    .members-content .member-instrument{
-        display: none;
-      }
-    
-    .track-image img{
-        top:50%; left:50%; transform:translate(-50%, -50%); width: 200px;
-     }
-    .video-area .video-content{
-        width: 100%; height: 60%; position: relative;
-    }
-    /* .video-area .video-title .title div p{
-        position: absolute; margin: 0;text-transform: uppercase; top:40%; margin: 0;left: 50%;
-        font-family: 'Red Hat Display', sans-serif;font-size: 1.5rem;font-weight: 800;
-     } */
-    .video-area .video-title{
-        width: 100%; height: 50%;  position: relative; display: flex; 
-    }
-    .video-area .video-content{
-        width: 100%; height: 50%; position: relative;
-    }
+    .members-text .text-area{width: 50%; z-index: 1002;left:35%;transform: translateY(-60%);}
+    .members-text .text-area h1{font-size: 2rem;}
+    .members-text .text-area p:last-of-type{font-size: 2rem; line-height: 2.2rem;}
+    .members-content .member-instrument{display: none;}
+    .track-image img{top:50%; left:50%; transform:translate(-50%, -50%); width: 200px;}
+    .track-image p{font-size: 13rem; top:75%; left:65%; color:#ff5900;}
+    .video-area .video-content{width: 100%; height: 60%; position: relative;}
+    .video-area .video-title{ width: 100%; height: 50%;  position: relative; display: flex; }
+    .video-area .video-content{width: 100%; height: 50%; position: relative;}
     .video-area .video-title  .bg-section .main-title h1{
         font-size: 3.5rem;top:60%; left: 55%; transform: translate(-50%, -50%); 
-         z-index: 2000;margin:0; width: 80%; line-height: 4rem; letter-spacing: 2px; text-align: left;
+        z-index: 2000;margin:0; width: 80%; line-height: 4rem; letter-spacing: 2px; text-align: left;
      }
     .video-respon-wrap > video{
         height: auto; width: 350px; 
@@ -465,4 +243,7 @@
         font-size: 3rem;top:60%; left: 55%; transform: translate(-50%, -50%); 
          z-index: 2000;margin:0; width: 80%; line-height: 4rem; letter-spacing: 2px; text-align: left;
      }
+    .track-text .text-area .text-wrap p:last-of-type {
+      line-height: 1.2rem;
+    }
 }

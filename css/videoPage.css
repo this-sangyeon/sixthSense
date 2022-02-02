@@ -145,7 +145,7 @@
 .video-list > ul li:nth-of-type(3){transform: translate(-50%, -50%) rotate(144deg);}
 .video-list > ul li:nth-of-type(4){transform: translate(-50%, -50%) rotate(216deg);}
 .video-list > ul li:last-of-type{transform: translate(-50%, -50%) rotate(288deg);}
-.video-list > ul li > video{outline: none; border-radius: 20px; width: 700px;}
+.video-list > ul li > video{outline: none; border-radius: 20px; width: 700px; }
 .video-list > ul li >.video-text{
     position: absolute; margin-top:10px; font-family: 'Red Hat Display', sans-serif; 
     font-size: 2rem;font-weight: 800;color: #ffffff;

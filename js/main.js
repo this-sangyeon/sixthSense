@@ -2,7 +2,7 @@ let senseNavList = document.querySelectorAll('.sense-nav > ul > li > a');
 const section = document.querySelectorAll('section');
 const transitionBox = document.querySelector('.transitionbox');
 senseNavList = Array.prototype.slice.call(senseNavList);
-
+const footer = document.querySelector('footer');
 
 for(let i = 0; i < senseNavList.length; i++){
     senseNavList[i].addEventListener('click',(e)=>{
@@ -16,7 +16,6 @@ for(let i = 0; i < senseNavList.length; i++){
         section[i].classList.add('active');
         senseNavList[i].classList.add('active');
         lyricsBtnClose();
-        
         if(naveListIndex === 0){
             console.log('click1');
             transitionBox.style.width ="0%";
@@ -24,9 +23,11 @@ for(let i = 0; i < senseNavList.length; i++){
             transitionBox.style.background ="none";
             transitionBox.style.bottom ="20%";
             transitionBox.style.right ="20%";
+            footer.style.display ='block';
         }
         else if(naveListIndex === 1){
             console.log('click2');
+            footer.style.display ='block';
             transitionBox.style.width ="5%";
             transitionBox.style.height ="5%";
             transitionBox.style.background ="white";
@@ -59,6 +60,8 @@ for(let i = 0; i < senseNavList.length; i++){
             transitionBox.style.right ="0%";
             transitionBox.style.transition ="ease-in 0.2s";
 
+            footer.style.display ='none';
+
             if(isClick === false){
             const zero = 0;
                 trackTitle.innerText =trackArrayInfo[zero].title;
@@ -75,6 +78,15 @@ for(let i = 0; i < senseNavList.length; i++){
                 }
                 trackList[zero].classList.add('active')
             }
+           if(matchMedia("screen and (max-width : 650px)").matches){
+                transitionBox.style.width ="100%";
+                transitionBox.style.height ="70%";
+                transitionBox.style.background ="#FF971E";
+                transitionBox.style.bottom ="0%";
+                transitionBox.style.right ="0%";
+                transitionBox.style.transition ="ease-in 0.2s";
+            }
+            
         }
         else if(naveListIndex === 3){
             console.log('click4');
@@ -84,6 +96,7 @@ for(let i = 0; i < senseNavList.length; i++){
             transitionBox.style.bottom ="0%";
             transitionBox.style.right ="0%";
             transitionBox.style.transition ="ease-in 0.2s";
+            footer.style.display ='none';
         }
     })
     window.addEventListener('resize',()=>{
@@ -111,11 +124,7 @@ for(let i = 0; i < senseNavList.length; i++){
 }
 
 
-// window.addEventListener('resize',()=>{
-//     if(senseNavList === 2){
-//         console.log('/sdf');
-//     }
-// })
+
 
 
 

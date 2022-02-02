@@ -34,7 +34,7 @@ let videoLink =[
 let videoListLength = videoLink.length;
 
 prevBtn.addEventListener('click', ()=>{
-    if(matchMedia("screen and (max-width : 1920px)").matches){
+    if(matchMedia("screen and (min-width : 1301px) and (max-width : 1920px)").matches){
         count--; 
         console.log(count);
         videoListEl.style.transform = `rotate( ${72 * count * -1}deg)`;

@@ -103,3 +103,4 @@ membersMainImage.addEventListener('mouseleave',()=>{
         mouseHoverSign.classList.remove('active'); 
     }, 300)
 })
+
