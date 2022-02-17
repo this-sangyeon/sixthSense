@@ -148,12 +148,12 @@
     line-height: 1.5rem;
 }
 .lyrics-container{
-    position: absolute; top:50%; right:10%; transform:translateY(-50%);
-    width: 0%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px; transition: 0.3s ease-in-out;
+    position: absolute; top:50%; right:-5%; transform:translateY(-50%);
+    width: 0%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px; transition: 0.5s ease-in-out;
 }
 .lyrics-container.active{
     position: absolute; top:50%; right:10%; transform:translateY(-50%);
-    width: 40%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px;transition: 0.3s ease-in-out;
+    width: 40%;height: 70%; background-color: rgb(255, 255, 255); border-radius: 30px;transition: 0.5s ease-in-out;
 }
 .lyrics-content {
     position: relative; width: 100%; height: 100%;
